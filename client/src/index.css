@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+:root {
+  /* Colors */
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --accent-color: #e74c3c;
+  --background-color: #ecf0f1;
+  --text-color: #2c3e50;
+  --border-color: #bdc3c7;
+
+  --primary-color-dark: #2980b9;
+  --secondary-color-dark: #27ae60;
+  --accent-color-dark: #c0392b;
+  --background-color-dark: #bdc3c7;
+  --text-color-dark: #34495e;
+
+  /* Typography */
+  --font-family-base: "Poppins", sans-serif;
+  --font-family-heading: "Poppins", sans-serif;
+  --font-size-base: 18px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --line-height-base: 1.5;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Borders and Shadows */
+  --border-radius-sm: 2px;
+  --border-radius-md: 4px;
+  --border-radius-lg: 8px;
+  --border-width: 1px;
+  --box-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --box-shadow-md: 0 3px 6px rgba(0, 0, 0, 0.15);
+  --box-shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+  /* breakpoint */
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 1024px;
+  --breakpoint-lg: 1280px;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+body {
+  margin: 0;
+  /* background-color: var(--background-color); */
+  color: var(--text-color);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-bold);
+}
+p{
+  font-size: var(--font-size-lg);
+}
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
