@@ -16,8 +16,12 @@ import {
 import "./Navbar.css";
 
 function Navbar() {
-
-  const [showDropdown, setShowDropdown] = useState(false);
+  // initializes activeDropdown to null, no dropdown is open by default.
+  const [activeDropdown, setActiveDropdown] = useState(null);
+  // handling active dropdown
+  const handleDropdown = (dropdown) => {
+    setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
+  }
   return (
     <div className="navbar">
       <div className="navbar-left">
@@ -28,8 +32,8 @@ function Navbar() {
           <a className="link">Home</a>
           <a className="link about">About Us</a>
           <div className="dropdown">
-            <a className="link blog" onClick={setShowDropdown(true)}>Opportunities <FaCaretDown/></a>
-            { showDropdown &&
+            <a className="link blog" onClick={() => handleDropdown("opportunities")}>Opportunities <FaCaretDown/></a>
+            { activeDropdown === "opportunities"  &&
              <div className="dropdown-content">
              <div className="mega-menu">
                <div className="mega-menu-column1">
@@ -56,9 +60,10 @@ function Navbar() {
            
           </div>
           <div className="dropdown">
-            <a href="#" className="link">
+            <a href="#" className="link" onClick={() => handleDropdown("blog")}>
               Blog <FaCaretDown/>
             </a>
+            { activeDropdown === "blog"  &&
             <div className="dropdown-content">
               <div className="mega-menu">
                 <div className="mega-menu-column">
@@ -77,7 +82,7 @@ function Navbar() {
                   </a>
                   <a href="#3" className="link">
                     {" "}
-                    <FaBook className="icon" /> Learning Materials
+                    <FaBook className="icon" /> Learning Materials 
                   </a>
                 </div>
                 <div className="mega-menu-column">
@@ -98,6 +103,7 @@ function Navbar() {
                 </div>
               </div>
             </div>
+}
           </div>
           <a className="link contact">Contact Us</a>
         </div>

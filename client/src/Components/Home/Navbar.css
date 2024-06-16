@@ -28,8 +28,8 @@
 .navbar-menu {
   display: flex;
   justify-content: center;
-  gap: 20px;
   align-items: center;
+  gap: 5px;
 }
 .navbar-menu .link{
     text-decoration: none;
@@ -47,17 +47,17 @@
     display: inline-block;
 }
 .dropdown-content{
-    display: none;
     position: absolute;
+    top: 45px;
     left: 0;
     background-color: var(--background-color);
     border-radius: 0 0 10px 10px;
     z-index: 1000;
     padding: 20px;
 }
-.dropdown:hover .dropdown-content{
+/* .dropdown:hover .dropdown-content{
     display: block;
-}
+} */
 .mega-menu {
     display: flex;
     gap: 20px;
@@ -91,7 +91,7 @@ margin-right: 40px;
   gap: 40px;
 }
 .search-container{
-    width: 300px;
+    min-width: 400px;
     display: flex;
     align-items: center;
     background-color: white;
@@ -111,3 +111,4 @@ margin-right: 40px;
     background-color: transparent;
 
 }
+
