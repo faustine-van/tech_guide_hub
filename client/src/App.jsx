@@ -1,16 +1,27 @@
-import { useState } from 'react'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import Navbar from './Components/Home/Navbar'
-import './App.css'
-
+// Components
+import MainPage from './Components/Home/MainPage';
+import Opportunities from './Components/Opportunities/Opportunities';
+import './App.css';
+import Layout from './Components/Layout';
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <MainPage />,
+      },
+      {
+        path: "/opportunities",
+        element: <Opportunities />,
+      },
+    ],
+  },
+]);
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-    <Navbar />
-    </>
-  )
+  return <RouterProvider router={router} />
 }
-
 export default App
