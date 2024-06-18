@@ -59,8 +59,6 @@
   text-decoration: none;
   color: var(--text-color);
   white-space: nowrap;
-
-
 }
 
 .dropdown {
@@ -121,7 +119,6 @@
   cursor: pointer;
   font-weight: var(--font-weight-bold);
   transition: background-color 0.3s;
-
 }
 
 .search-icon:hover {
@@ -140,7 +137,6 @@
   display: flex;
   align-items: center;
   padding: 10px;
-
 }
 
 .search-container input {
@@ -186,7 +182,6 @@
   transition: background-color 0.3s;
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 5px;
-
 }
 
 .side-menu .link:hover {
