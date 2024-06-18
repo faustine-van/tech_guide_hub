@@ -1,0 +1,97 @@
+/* Hero Section */
+.hero-section {
+  position: relative;
+  text-align: center;
+  padding: 100px 20px;
+  background-image: url('/Hero section.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--background-color);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Add a dark overlay for better text contrast */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.hero-section h1 {
+  font-size: var(--font-size-hero-heading);
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: var(--font-size-hero-paragrapy);
+  margin-bottom: 40px;
+}
+
+.hero-section .btns {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.btn {
+  margin: 10px;
+  padding: 10px 30px;
+  font-size: var(--font-size-md);
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius-xlg);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.hero-section .btn {
+  margin: 10px;
+  padding: 10px 30px;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius-xlg);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.hero-section .btn:hover {
+  background-color: var(--secondary-color);
+}
+
+
+/* Introduction Section */
+.introduction-section,
+.featured-opportunities-section,
+.upcoming-events-section,
+.career-advice-section,
+.success-stories-section,
+.join-community-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.introduction-section h2,
+.featured-opportunities-section h2,
+.upcoming-events-section h2,
+.career-advice-section h2,
+.success-stories-section h2,
+.join-community-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}

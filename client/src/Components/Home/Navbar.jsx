@@ -39,15 +39,15 @@ function Navbar() {
           <img src="/techguide-logo.png" alt="TechGuide Hub Logo" height="50" />
         </div>
         <div className={isMenuOpen ? "side-menu open" : "navbar-menu"}>
-          <NavLink to='/'  className={({isActive}) => (isActive ? 'active' : 'link')}>Home</NavLink>
+          <NavLink to='/' className={({ isActive }) => (isActive ? 'active' : 'link')}>Home</NavLink>
           <a className="link about">About Us</a>
           <div className="dropdown link">
-            <NavLink to='/opportunities'
+            <a
               className="dropdn"
               onClick={() => handleDropdown("opportunities")}
             >
               Opportunities <FaCaretDown />
-            </NavLink>
+            </a>
             {activeDropdown === "opportunities" && (
               <div className="dropdown-content">
                 <div className="mega-menu">
@@ -63,6 +63,9 @@ function Navbar() {
                     </a>
                     <a href="#" className="link">
                       <FaCalendarAlt className="icon" /> Events
+                    </a>
+                    <a href="#" className="link">
+                      <FaCalendarAlt className="icon" /> Internships
                     </a>
                     <a className="link">
                       <FaUserFriends className="icon" /> Mentorship Programs
