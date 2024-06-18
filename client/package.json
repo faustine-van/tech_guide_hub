@@ -10,7 +10,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "homepage": "https://github.com/faustine-van/tech_guide_hub/"
+    "homepage": "https://github.com/faustine-van/tech_guide_hub/client"
   },
   "dependencies": {
     "react": "^18.2.0",
