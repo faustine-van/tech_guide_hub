@@ -34,6 +34,7 @@
 .hero-section p {
   font-size: var(--font-size-hero-paragrapy);
   margin-bottom: 40px;
+
 }
 
 .hero-section .btns {
@@ -44,7 +45,6 @@
 }
 
 .btn {
-  margin: 10px;
   padding: 10px 30px;
   font-size: var(--font-size-md);
   background-color: var(--primary-color);
@@ -76,22 +76,244 @@
 
 
 /* Introduction Section */
-.introduction-section,
+.intro-section,
 .featured-opportunities-section,
 .upcoming-events-section,
-.career-advice-section,
-.success-stories-section,
-.join-community-section {
+.articles-section{
   padding: 50px 20px;
+}
+
+.intro-section h2,
+.featured-opportunities-section h2,
+.upcoming-events-section h2,
+.articles-section h2{
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* about section */
+.about-container {
+  background-color: var(--text-color);
+}
+
+.intro-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  color: white;
+  gap: 10px;
+  display: flex;
+}
+
+.intro-section .about-img, .intro-section .about-content {
+  width: 50%;
+}
+
+.intro-section .about-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-section .about-img img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.intro-section .about-content {
+  text-align: start;
+}
+
+.intro-section h2, .intro-section h3 {
+  color: var(--primary-color);
+}
+
+.about-content h2, .about-content p, .about-content h3 {
+  text-align: start;
+
+}
+
+.highlights {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.intro-section .highlights p {
+  margin: 0;
+
+}
+
+.intro-section .highlights div .about-icon {
+  margin-right: 10px;
+}
+
+
+/* opportunities section */
+.opportunities-containers {
+  position: relative;
+  background-image: url('/Default_technologies_blog_and_tech_no_word_3.jpg');
+  background-size: cover;
+  background-position: center;
+  border-top: 5px solid var(--primary-color);
+
+}
+
+
+/* Add a dark overlay for better text contrast */
+.opportunities-containers::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+.featured-opportunities-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  gap: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  color: white;
+
+}
+.opportunities {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+}
+
+.opportunity {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--text-color);
+
+}
+
+.opportunity img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.opportunity h3, .opportunity p {
+  margin: 0;
+  margin-bottom: 20px;
+
+}
+
+
+.opportunity a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+
+
+/* article section */
+.articles-container{
+  border-top: 5px solid var(--primary-color);
+
+}
+.articles-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  gap: 20px;
+
+
+}
+.articles-section p{
+  margin: 0;
   text-align: center;
 }
 
-.introduction-section h2,
-.featured-opportunities-section h2,
-.upcoming-events-section h2,
-.career-advice-section h2,
-.success-stories-section h2,
-.join-community-section h2 {
-  font-size: 2em;
+.articles{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.card-article {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.2s;
+  text-align: center;
+  font-size: var(--font-size-md);
+
+}
+.card-article:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.article-img .tag{
+  background-color: var(--text-color);
+  color: white;
+  padding: 3px 5px;
+  font-weight: var(--font-weight-bold);
+  border-radius: var(--border-radius-md);
+}
+.artcles-content{
+  padding: 10px;;
+}
+.card-article p, .card-article h3 {
+  margin: 0;
   margin-bottom: 20px;
+}
+.card-article p{
+  margin-top: 10px;
+
+
+}
+
+.card-article .read-more{
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: var(--font-size-md);
+
+
+}
+
+
+/* Media Queries for smaller screens */
+@media (max-width: 767px) {
+  .intro-section {
+    flex-direction: column;
+  }
+
+  .intro-section .about-img, .intro-section .about-content {
+    width: 100%;
+  }
+  .articles{
+    flex-wrap: wrap;
+  
+  }
 }

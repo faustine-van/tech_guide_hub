@@ -8,9 +8,41 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footer-content">
-        <div className="footer-logo-container">
+
+          <div className="social-logo-containers">
+          <div className="footer-logo-container">
           <img src="/techguide-white-logo.png" alt="TechGuide Hub Logo" />
         </div>
+        <div className="footer-social-media">
+            {/* <!-- Social media icons --> */}
+            <h3>Follow us</h3>
+            <div className="social-btns">
+              <div className="social">
+                <a className="social-btn facebook" href="#">
+                  <FaFacebookSquare />
+                </a>
+              </div>
+              <div className="social">
+                <a className="social-btn twitter" href="#">
+                  <FaSquareXTwitter />
+                </a>
+              </div>
+              <div className="social">
+                <a className="social-btn whatsapp" href="#">
+                  <FaWhatsappSquare />
+                </a>
+              </div>
+              <div className="social">
+                <a className="social-btn linkedin" href="#">
+                  <FaLinkedin />
+                </a>
+              </div>
+            </div>
+          </div>
+          </div>
+
+
+
         <div className="footer-links">
           <h3>Menu</h3>
           <a className="footer-link" href="#home">
@@ -55,36 +87,12 @@ function Footer() {
         <div className="footer-newsletter">
           <div className="newsletter">
             <h3>Subscribe to our newsletter</h3>
-              <input type="email" placeholder="Enter your email" />
-              <button className="submit" type="submit">
-                Subscribe
-              </button>
+            <input type="email" placeholder="Enter your email" />
+            <button className="submit" type="submit">
+              Subscribe
+            </button>
           </div>
-          <div className="footer-social-media">
-            {/* <!-- Social media icons --> */}
-            <div className="social-btns">
-              <div className="social">
-                <a className="social-btn facebook" href="#">
-                  <FaFacebookSquare />
-                </a>
-              </div>
-              <div className="social">
-                <a className="social-btn twitter" href="#">
-                  <FaSquareXTwitter />
-                </a>
-              </div>
-              <div className="social">
-                <a className="social-btn whatsapp" href="#">
-                  <FaWhatsappSquare />
-                </a>
-              </div>
-              <div className="social">
-                <a className="social-btn linkedin" href="#">
-                  <FaLinkedin />
-                </a>
-              </div>
-            </div>
-          </div>
+       
         </div>
       </div>
       <div className="footer-copyright">

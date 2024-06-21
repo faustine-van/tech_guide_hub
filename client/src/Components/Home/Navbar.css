@@ -38,21 +38,25 @@
 .navbar-menu .link {
   text-decoration: none;
   color: var(--text-color);
-  border-radius: 4px;
   padding: 10px;
   white-space: nowrap;
   transition: background-color 0.3s;
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-sm);
 }
 
 .navbar-menu .link:hover {
   color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  font-weight: var(--font-weight-bold);
+  padding-bottom: 10px;
 }
 
 .navbar-menu .active {
   text-decoration: none;
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-sm);
   color: var(--primary-color);
+  font-weight: var(--font-weight-bold);
+
 }
 
 .dropdn {
@@ -109,11 +113,11 @@
 }
 
 .search-icon {
-  padding: 10px 30px;
+  padding: 8px 12px;
   display: inline-flex;
   gap: 10px;
   align-items: center;
-  border-radius: var(--border-radius-xlg);
+  border-radius: 10px;
   color: white;
   background-color: var(--primary-color);
   cursor: pointer;
