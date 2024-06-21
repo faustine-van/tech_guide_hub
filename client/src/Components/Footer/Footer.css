@@ -1,16 +1,22 @@
 /* footer css */
 .footer {
   padding: 30px 20px;
-  background-color: var(--text-color);
+  background-color: var(--footer-color);
   color: #fff;
   display: flex;
   flex-direction: column;
   gap: 10px;
   font-size: var(--font-size-md);
+  border-top: 5px solid var(--primary-color);
 }
-
+.social-logo-containers{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .footer-logo-container {
   width: 300px;
+
 }
 
 .footer-logo-container img {
@@ -89,7 +95,12 @@
 
 /* <!-- Social media icons --> */
 .footer-social-media {
-  margin-top: 60px;
+  text-align: start;
+
+}
+.footer-social-media h3{
+  text-align: start;
+
 }
 
 .social-btns {
