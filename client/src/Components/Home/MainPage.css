@@ -3,7 +3,7 @@
   position: relative;
   text-align: center;
   padding: 100px 20px;
-  background-image: url('/Hero section.jpg');
+  background-image: url('/Default_technologies_blog_and_tech_no_word_3.jpg');
   background-size: cover;
   background-position: center;
   color: var(--background-color);
@@ -45,17 +45,26 @@
 }
 
 .btn {
-  padding: 10px 30px;
+  padding-bottom: 10px;
   font-size: var(--font-size-md);
-  background-color: var(--primary-color);
-  color: #fff;
+  color: var(--primary-color);
   border: none;
-  border-radius: var(--border-radius-xlg);
   cursor: pointer;
   transition: background-color 0.3s;
   text-decoration: none;
-}
+  font-weight: var(--font-weight-bold);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+.btn-icon{
+  margin-left: 5px;
+}
+.btn:hover {
+  transition: border-bottom-width 0.3s;
+  color: var(--primary-color);
+}
 .hero-section .btn {
   margin: 10px;
   padding: 10px 30px;
@@ -186,12 +195,15 @@
   position: relative;
   z-index: 1;
   color: white;
+  font-size: var(--font-size-md);
+
 
 }
 .opportunities {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 
 }
 
@@ -204,12 +216,12 @@
   flex-direction: column;
   justify-content: center;
   color: var(--text-color);
-
+  width: 250px;
 }
 
 .opportunity img {
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
   margin-bottom: 10px;
 }
@@ -219,14 +231,6 @@
   margin-bottom: 20px;
 
 }
-
-
-.opportunity a {
-  text-decoration: none;
-  color: #007bff;
-}
-
-
 
 /* article section */
 .articles-container{
@@ -241,8 +245,6 @@
   margin: auto;
   padding: 20px;
   gap: 20px;
-
-
 }
 .articles-section p{
   margin: 0;
@@ -253,6 +255,7 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .card-article {
   background-color: #fff;
@@ -286,19 +289,24 @@
 }
 .card-article p, .card-article h3 {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .card-article p{
-  margin-top: 10px;
+  margin-top: 5px;
+  font-size: var(--font-size-sm);
+
 
 
 }
 
-.card-article .read-more{
+ .read-more {
   text-decoration: none;
-  color: var(--secondary-color);
-  font-size: var(--font-size-md);
-
+  font-size: var(--font-size-sm);
+  color: var(--primary-color);
+}
+.read-more:hover{
+  text-decoration: underline;
+  color: var(--primary-color);
 
 }
 
@@ -311,9 +319,5 @@
 
   .intro-section .about-img, .intro-section .about-content {
     width: 100%;
-  }
-  .articles{
-    flex-wrap: wrap;
-  
   }
 }

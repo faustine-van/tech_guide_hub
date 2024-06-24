@@ -8,12 +8,11 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footer-content">
-
-          <div className="social-logo-containers">
+        <div className="social-logo-containers">
           <div className="footer-logo-container">
-          <img src="/techguide-white-logo.png" alt="TechGuide Hub Logo" />
-        </div>
-        <div className="footer-social-media">
+            <img src="/techguide-white-logo.png" alt="TechGuide Hub Logo" />
+          </div>
+          <div className="footer-social-media">
             {/* <!-- Social media icons --> */}
             <h3>Follow us</h3>
             <div className="social-btns">
@@ -39,9 +38,7 @@ function Footer() {
               </div>
             </div>
           </div>
-          </div>
-
-
+        </div>
 
         <div className="footer-links">
           <h3>Menu</h3>
@@ -86,13 +83,15 @@ function Footer() {
         </div>
         <div className="footer-newsletter">
           <div className="newsletter">
-            <h3>Subscribe to our newsletter</h3>
-            <input type="email" placeholder="Enter your email" />
-            <button className="submit" type="submit">
-              Subscribe
-            </button>
+            <h2>Stay Updated with TechGuide Hub</h2>
+            <p>Subscribe to our newsletter</p>
+            <div className="input">
+              <input type="email" placeholder="Enter your email" />
+              <button className="submit" type="submit">
+                Subscribe
+              </button>
+            </div>
           </div>
-       
         </div>
       </div>
       <div className="footer-copyright">
