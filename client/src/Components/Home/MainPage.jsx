@@ -1,25 +1,20 @@
 import React from "react";
 import { FaBriefcase, FaTools, FaBook } from "react-icons/fa";
+import SSlider from "./SlideShow";
 
 import "./MainPage.css";
 import { Link } from "react-router-dom";
 
 function MainPage() {
+
   return (
+
     <div className="homepage">
-      <div className="hero-section">
-        <div className="hero-content">
-          <h1>Welcome to TechGuide Hub</h1>
-          <p>
-            Your Ultimate Resource for Career Development and Academic Success
-          </p>
-          <div className="btns">
-            <Link className="btn">Explore Opportunities</Link>
-            <Link className="btn">Join a Workshop</Link>
-            <Link className="btn">Read Articles</Link>
-          </div>
-        </div>
+      <div className="slide-show">
+        <SSlider />
+
       </div>
+
       <div className="about-container">
         <div className="intro-section">
           <div className="about-content">
@@ -74,6 +69,9 @@ function MainPage() {
 
       <div className="opportunities-containers">
         <div className="featured-opportunities-section">
+
+
+
           <h2>Latest Opportunities</h2>
           <p>
             {" "}
@@ -145,98 +143,107 @@ function MainPage() {
       </div>
 
       <div className="articles-container">
-        <div className="articles-section">
-          <h2>Latest articles</h2>
-          <p>
-            Hear from our community members who have achieved their career and
-            academic goals with the help of TechGuide Hub. Get inspired by their
-            journeys and start your own success story today.
-          </p>
-          <div className="articles">
-            <div className="card-article">
-              <div className="article-img">
-                <img
-                  src="/Default_look_good_3.jpg"
-                  className="card-img"
-                  alt=" article img"
-                />
-                <small className="tag">Career</small>
-              </div>
-              <div className="artcles-content">
-                <h3 className="card-title">Article Title 1</h3>
-                <p className="card-description">
-                  This is a brief description of the article. It provides a
-                  quick summary to catch the reader's interest.
-                </p>
-                <a href="#" className="read-more">
-                  Read More
-                </a>
-              </div>
-            </div>
-            <div className="card-article">
-              <div className="article-img">
-                <img
-                  src="/Default_look_good_3.jpg"
-                  className="card-img"
-                  alt=" article img"
-                />
-                <small className="tag">Career</small>
-              </div>
-              <div className="artcles-content">
-                <h3 className="card-title">Article Title 1</h3>
-                <p className="card-description">
-                  This is a brief description of the article. It provides a
-                  quick summary to catch the reader's interest.
-                </p>
-                <a href="#" className="read-more">
-                  Read More
-                </a>
-              </div>
-            </div>
-
-            <div className="card-article">
-              <div className="article-img">
-                <img
-                  src="/Default_look_good_3.jpg"
-                  className="card-img"
-                  alt=" article img"
-                />
-                <small className="tag">Career</small>
-              </div>
-              <div className="artcles-content">
-                <h3 className="card-title">Article Title 1</h3>
-                <p className="card-description">
-                  This is a brief description of the article. It provides a
-                  quick summary to catch the reader's interest.
-                </p>
-                <Link href="#" className="read-more">
-                  Read More
-                </Link>
-              </div>
-            </div>
+  <div className="articles-section">
+    <h2>Latest articles</h2>
+    <p>
+      Hear from our community members who have achieved their career and
+      academic goals with the help of TechGuide Hub. Get inspired by their
+      journeys and start your own success story today.
+    </p>
+    <div className="articles">
+      <div className="card-article">
+        <div className="article-img">
+          <img
+            src="/Default_look_good_3.jpg"
+            className="card-img"
+            alt="article img"
+          />
+          <div className="labels">
+            <small className="tag">Career</small>
+            <small className="date">Aug 26th, 2014</small>
           </div>
-          <Link className="btn">
-            See All Articles{" "}
-            <svg
-              className="btn-icon"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="m7 16 4-4-4-4m6 8 4-4-4-4"
-              />
-            </svg>
-          </Link>
+        </div>
+        <div className="articles-content">
+          <h3 className="card-title">Article Title 1</h3>
+          <p className="card-description">
+            This is a brief description of the article. It provides a
+            quick summary to catch the reader's interest.
+          </p>
+          <a href="#" className="read-more">
+            Read More
+          </a>
         </div>
       </div>
+      <div className="card-article">
+        <div className="article-img">
+          <img
+            src="/Default_look_good_3.jpg"
+            className="card-img"
+            alt="article img"
+          />
+          <div className="labels">
+            <small className="tag">Career</small>
+            <small className="date">Aug 26th, 2014</small>
+          </div>
+        </div>
+        <div className="articles-content">
+          <h3 className="card-title">Article Title 2</h3>
+          <p className="card-description">
+            This is a brief description of the article. It provides a
+            quick summary to catch the reader's interest.
+          </p>
+          <a href="#" className="read-more">
+            Read More
+          </a>
+        </div>
+      </div>
+      <div className="card-article">
+        <div className="article-img">
+          <img
+            src="/Default_look_good_3.jpg"
+            className="card-img"
+            alt="article img"
+          />
+          <div className="labels">
+            <small className="tag">Career</small>
+            <small className="date">Aug 26th, 2014</small>
+          </div>
+        </div>
+        <div className="articles-content">
+          <h3 className="card-title">Article Title 3</h3>
+          <p className="card-description">
+            This is a brief description of the article. It provides a
+            quick summary to catch the reader's interest.
+          </p>
+          <a href="#" className="read-more">
+            Read More
+          </a>
+        </div>
+      </div>
+    </div>
+    <a className="btn" href="#">
+      See All Articles
+      <svg
+        className="btn-icon"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="m7 16 4-4-4-4m6 8 4-4-4-4"
+        />
+      </svg>
+    </a>
+  </div>
+</div>
+
     </div>
   );
 }

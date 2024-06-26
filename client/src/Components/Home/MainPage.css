@@ -1,48 +1,4 @@
-/* Hero Section */
-.hero-section {
-  position: relative;
-  text-align: center;
-  padding: 100px 20px;
-  background-image: url('/Default_technologies_blog_and_tech_no_word_3.jpg');
-  background-size: cover;
-  background-position: center;
-  color: var(--background-color);
-}
 
-.hero-content {
-  position: relative;
-  z-index: 1;
-}
-
-/* Add a dark overlay for better text contrast */
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 0;
-}
-
-.hero-section h1 {
-  font-size: var(--font-size-hero-heading);
-  margin-bottom: 20px;
-}
-
-.hero-section p {
-  font-size: var(--font-size-hero-paragrapy);
-  margin-bottom: 40px;
-
-}
-
-.hero-section .btns {
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-}
 
 .btn {
   padding-bottom: 10px;
@@ -65,23 +21,7 @@
   transition: border-bottom-width 0.3s;
   color: var(--primary-color);
 }
-.hero-section .btn {
-  margin: 10px;
-  padding: 10px 30px;
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-bold);
-  background-color: var(--primary-color);
-  color: #fff;
-  border: none;
-  border-radius: var(--border-radius-xlg);
-  cursor: pointer;
-  transition: background-color 0.3s;
-  text-decoration: none;
-}
 
-.hero-section .btn:hover {
-  background-color: var(--secondary-color);
-}
 
 
 /* Introduction Section */
@@ -161,6 +101,26 @@
 }
 
 
+.slide-show{
+  position: relative;
+  background-image: url('/Default_technologies_blog_and_tech_no_word_3.jpg');
+  background-size: cover;
+  background-position: center;
+  border-top: 5px solid var(--primary-color);
+}
+.slide-show::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+
+
 /* opportunities section */
 .opportunities-containers {
   position: relative;
@@ -168,7 +128,6 @@
   background-size: cover;
   background-position: center;
   border-top: 5px solid var(--primary-color);
-
 }
 
 
@@ -232,83 +191,126 @@
 
 }
 
-/* article section */
-.articles-container{
+.articles-container {
   border-top: 5px solid var(--primary-color);
-
 }
-.articles-section{
+
+.articles-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
   max-width: 1200px;
   margin: auto;
   padding: 20px;
   gap: 20px;
 }
-.articles-section p{
-  margin: 0;
+
+.articles-section p, .articles-section h2 {
   text-align: center;
+  margin: 0;
 }
 
-.articles{
+.articles {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
+
 .card-article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   width: 300px;
   transition: transform 0.2s;
-  text-align: center;
   font-size: var(--font-size-md);
-
 }
+
 .card-article:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
+
 .card-img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
-.article-img .tag{
-  background-color: var(--text-color);
-  color: white;
-  padding: 3px 5px;
+
+.article-img .labels {
+  display: flex;
+  justify-content: space-between;
   font-weight: var(--font-weight-bold);
+
+}
+
+.article-img .tag {
+  position: relative;
+  bottom: 200px;
+  left: 240px;
+  background-color: white;
+  color: var(--text-color);
+  padding: 3px 5px;
+  font-size: 13px;
   border-radius: var(--border-radius-md);
 }
-.artcles-content{
-  padding: 10px;;
+
+.article-img .date {
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background for date */
+  color: white;
+  padding: 3px 5px;
+  font-size: 13px;
+  border-radius: var(--border-radius-md);
 }
+
+.articles-content {
+  padding: 0 10px  20px 10px ;
+}
+
 .card-article p, .card-article h3 {
   margin: 0;
   margin-bottom: 10px;
+  text-align: start;
 }
-.card-article p{
+
+.card-article p {
   margin-top: 5px;
   font-size: var(--font-size-sm);
-
-
-
 }
 
- .read-more {
+.read-more {
   text-decoration: none;
   font-size: var(--font-size-sm);
   color: var(--primary-color);
 }
-.read-more:hover{
+
+.read-more:hover {
   text-decoration: underline;
   color: var(--primary-color);
-
 }
+
+.btn {
+  text-decoration: none;
+  font-size: var(--font-size-md);
+  color: var(--primary-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.btn-icon {
+  width: 24px;
+  height: 24px;
+}
+
 
 
 /* Media Queries for smaller screens */

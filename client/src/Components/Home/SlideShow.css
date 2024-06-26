@@ -1,0 +1,139 @@
+.carousel-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    color: white;
+}
+
+.sliding {
+    width: 100%;
+}
+
+.item {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.hero-heading {
+    margin-bottom: 1rem; /* mb-4 */
+    letter-spacing: -0.05em; /* tracking-tight */
+
+}
+
+
+
+
+.hero-paragraph {
+    margin-bottom: 1rem; /* mb-6 */
+    font-size: 1.125rem; /* text-lg */
+    word-wrap: break-word; /* Ensure text wraps correctly */
+    word-break: break-all; /* Ensure long words break correctly */
+    white-space: normal; /* Ensure text wraps */
+
+}
+
+
+.hero-button {
+    display: inline-flex;
+    align-items: center; /* items-center */
+    justify-content: center; /* justify-center */
+    padding: 7px 30px; /* px-5 py-3 */
+    font-size: var(--font-size-md);
+    text-align: center; /* text-center */
+    color: #fff; /* text-white */
+    background-color: var(--primary-color); /* bg-blue-700 */
+    border-radius: 0.5rem; /* rounded-lg */
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.hero-button:hover {
+    color: white;
+    background-color: #1e40af; /* hover:bg-blue-800 */
+}
+
+
+
+.hero-button .hero-svg {
+    width: 0.875rem; /* w-3.5 */
+    height: 0.875rem; /* h-3.5 */
+    margin-left: 0.5rem; /* ms-2 */
+}
+
+.hero-button .hero-svg[dir="rtl"] {
+    transform: rotate(180deg); /* rtl:rotate-180 */
+}
+
+
+.custom-prev-arrow,
+.custom-next-arrow {
+    background-color: white; /* Background color of the arrow */
+    color: black; /* Text color of the arrow */
+    border: none; /* Remove default border */
+    border-radius: 50%; /* Rounded shape */
+    font-size: 1.5rem; /* Font size */
+    width: 40px; /* Width of the arrow button */
+    height: 40px; /* Height of the arrow button */
+    display: flex; /* Center the arrow icon */
+    align-items: center; /* Center the arrow icon */
+    justify-content: center; /* Center the arrow icon */
+    cursor: pointer; /* Cursor style */
+    position: absolute; /* Position the arrows */
+    top: 50%; /* Vertical center */
+    transform: translateY(-50%); /* Vertical center */
+    z-index: 2; /* Ensure arrows are above carousel items */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.custom-prev-arrow {
+    left: 10px; /* Position the previous arrow */
+}
+
+.custom-next-arrow {
+    right: 10px; /* Position the next arrow */
+}
+
+.custom-prev-arrow:hover,
+.custom-next-arrow:hover {
+    background-color: var(--border-color); /* Hover background color */
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .hero-paragraph {
+        font-size: 1.25rem; /* lg:text-xl */ 
+        padding-left: 4rem; /* sm:px-16 */
+        padding-right: 4rem; /* sm:px-16 */
+    }
+}
+
+@media (max-width: 1280px) {
+    .hero-paragraph {
+        padding-left: 12rem; /* xl:px-48 */
+        padding-right: 12rem; /* xl:px-48 */
+    }
+}
+@media (max-width: 768px) {
+    .hero-heading {
+        font-size: 2.25rem; /* text-4xl */
+    }
+    .custom-prev-arrow {
+        left: 2px; /* Position the previous arrow */
+    }
+    
+    .custom-next-arrow {
+        right: 2px; /* Position the next arrow */
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-heading {
+        font-size: 3.75rem; /* lg:text-6xl */
+    }
+}
