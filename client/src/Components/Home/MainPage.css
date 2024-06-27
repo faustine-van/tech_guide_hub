@@ -26,14 +26,14 @@
 
 /* Introduction Section */
 .intro-section,
-.featured-opportunities-section,
+.events-section,
 .upcoming-events-section,
 .articles-section{
   padding: 50px 20px;
 }
 
 .intro-section h2,
-.featured-opportunities-section h2,
+.events-section h2,
 .upcoming-events-section h2,
 .articles-section h2{
   font-size: 2em;
@@ -122,7 +122,7 @@
 
 
 /* opportunities section */
-.opportunities-containers {
+.event-containers {
   position: relative;
   background-image: url('/Default_technologies_blog_and_tech_no_word_3.jpg');
   background-size: cover;
@@ -132,7 +132,7 @@
 
 
 /* Add a dark overlay for better text contrast */
-.opportunities-containers::before {
+.event-containers::before {
   content: '';
   position: absolute;
   top: 0;
@@ -140,56 +140,92 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 0;
+  z-index: 1;
 }
-.featured-opportunities-section{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+/*event section*/
+.events-section{
+  position: relative;
+  z-index: 2;
   max-width: 1200px;
   margin: auto;
   padding: 20px;
-  gap: 20px;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  color: white;
-  font-size: var(--font-size-md);
-
-
-}
-.opportunities {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-
-}
-
-.opportunity {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  gap: 20px;
+
+}
+.events-section .event-head{
+  color: white;
+}
+.events{
+  display: flex;
+  gap: 20px;
   justify-content: center;
+}
+.event {
   color: var(--text-color);
-  width: 250px;
-}
 
-.opportunity img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin-bottom: 10px;
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius-xlg);
+  background-color: var(--background-color);
+  box-shadow: var(--box-shadow-lg);
 }
-
-.opportunity h3, .opportunity p {
-  margin: 0;
+.event-header {
+  text-align: center;
   margin-bottom: 20px;
+}
+.event-header h3 {
+  margin: 0;
+}
+.event-header p {
+  margin: 0;
+  font-size: var(--font-size-md);
 
 }
+.event-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.event-description {
+  margin-bottom: 20px;
+  font-size: var(--font-size-md);
+  width: 100%;
+           /* this code clamps based on specified lines */
+           overflow: hidden;
+          -webkit-box-orient: vertical;
+         -webkit-line-clamp: 3;
+         display: -webkit-box;
+
+}
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: var(--font-size-md);
+  transition: background-color 0.3s;
+}
+.cta-button:hover {
+  background-color: var(--seconda-color);
+}
+.contact-info {
+  margin-top: 20px;
+  font-size: var(--font-size-md);
+  color: #555;
+}
+
+
+
+/*articles section*/
 
 .articles-container {
   border-top: 5px solid var(--primary-color);
@@ -212,7 +248,7 @@
 .articles {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
@@ -260,31 +296,40 @@
 
 .article-img .date {
   background-color: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background for date */
-  color: white;
+  color: #fff;
   padding: 3px 5px;
+  margin-right: 10px;
   font-size: 13px;
   border-radius: var(--border-radius-md);
 }
 
 .articles-content {
   padding: 0 10px  20px 10px ;
+
 }
 
 .card-article p, .card-article h3 {
   margin: 0;
-  margin-bottom: 10px;
   text-align: start;
+  margin-top: 10px;
+
 }
 
 .card-article p {
-  margin-top: 5px;
-  font-size: var(--font-size-sm);
-}
+  margin-bottom: 10px;
+  font-size: var(--font-size-md);
+  width: 100%;
+           /* this code clamps based on specified lines */
+           overflow: hidden;
+          -webkit-box-orient: vertical;
+         -webkit-line-clamp: 3;
+         display: -webkit-box;}
 
 .read-more {
   text-decoration: none;
   font-size: var(--font-size-sm);
   color: var(--primary-color);
+  font-weight: var(--font-weight-bold);
 }
 
 .read-more:hover {
@@ -314,12 +359,16 @@
 
 
 /* Media Queries for smaller screens */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .intro-section {
     flex-direction: column;
   }
 
   .intro-section .about-img, .intro-section .about-content {
     width: 100%;
+  }
+
+  .events{
+    flex-wrap: wrap;
   }
 }

@@ -56,7 +56,6 @@
 /* Footer newsletter */
 .footer-newsletter {
   padding: 5px;
-  /* text-align: center; */
 }
 .newsletter h3{
     text-align: start;
@@ -67,7 +66,7 @@
   padding: 5px;
   gap: 10px;
   display: flex;
-  background-color: var(--background-color);
+  background-color: var(--background-grey-color);
   border-radius: var(--border-radius-md);
 
 }

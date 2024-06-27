@@ -6,13 +6,10 @@ import "./MainPage.css";
 import { Link } from "react-router-dom";
 
 function MainPage() {
-
   return (
-
     <div className="homepage">
       <div className="slide-show">
         <SSlider />
-
       </div>
 
       <div className="about-container">
@@ -67,183 +64,228 @@ function MainPage() {
         </div>
       </div>
 
-      <div className="opportunities-containers">
-        <div className="featured-opportunities-section">
-
-
-
-          <h2>Latest Opportunities</h2>
-          <p>
-            {" "}
-            Stay ahead of the curve with our curated listings of the latest
-            scholarships, jobs, online courses, and programs. Discover
-            opportunities that align with your career goals and academic
-            interests.
-          </p>
-          <div class="opportunities">
-            <div class="opportunity">
-              <img
-                src="/Default_online_course_program_image_1.jpg"
-                alt="Scholarship"
-              />
-              <h3>Scholarship</h3>
-              <p>
-                Apply for our annual scholarship program to get financial
-                support for your studies.
-              </p>
-              <a href="scholarship-application.html" className="read-more">
-                Learn more
-              </a>
-            </div>
-            <div class="opportunity">
+      <div className="event-containers">
+        <div className="events-section">
+          <h2 className="event-head">Upcoming events</h2>
+          <div className="events">
+            <div class="event">
+              <div class="event-header">
+                <h3>Annual Tech Conference 2024</h3>
+                <p>June 30, 2024 | Silicon Valley, CA</p>
+              </div>
               <img
                 src="/Default_A_professional_background_image_showcasing_a_modern_of_2.jpg"
-                alt="Scholarship"
+                alt="Event Image"
+                class="event-img"
               />
-              <h3>Online courses</h3>
-              <p>
-                Enhance your skills with our comprehensive online courses
-                available in various domains.
-              </p>
-              <a href="scholarship-application.html" className="read-more">
-                Learn more
+              <div class="event-description">
+                <p>
+                  Join us for the Annual Tech Conference 2024, where industry
+                  leaders and tech enthusiasts come together to explore the
+                  latest trends and innovations in technology. The event will
+                  feature keynote speeches, panel discussions, and networking
+                  opportunities.
+                </p>
+              </div>
+              <a href="#" class="cta-button">
+                Register Now
               </a>
+              <div class="contact-info">
+                <p>
+                  For more information, contact us at{" "}
+                  <a href="mailto:info@techconference.com">
+                    info@techconference.com
+                  </a>
+                </p>
+              </div>
             </div>
-            <div class="opportunity">
+            <div class="event">
+              <div class="event-header">
+                <h3>Annual Tech Conference 2024</h3>
+                <p>June 30, 2024 | Silicon Valley, CA</p>
+              </div>
               <img
-                src="/Default_online_course_program_image_1.jpg"
-                alt="Scholarship"
+                src="/Default_A_professional_background_image_showcasing_a_modern_of_2.jpg"
+                alt="Event Image"
+                class="event-img"
               />
-              <h3>Events</h3>
-              <p>
-                Join our upcoming events and webinars to network and learn from
-                industry experts.
-              </p>
-              <a href="scholarship-application.html" className="read-more">
-                Learn more
+              <div class="event-description">
+                <p>
+                  Join us for the Annual Tech Conference 2024, where industry
+                  leaders and tech enthusiasts come together to explore the
+                  latest trends and innovations in technology. The event will
+                  feature keynote speeches, panel discussions, and networking
+                  opportunities.
+                </p>
+              </div>
+              <a href="#" class="cta-button">
+                Register Now
               </a>
+              <div class="contact-info">
+                <p>
+                  For more information, contact us at{" "}
+                  <a href="mailto:info@techconference.com">
+                    info@techconference.com
+                  </a>
+                </p>
+              </div>
             </div>
-            <div class="opportunity">
+            <div class="event">
+              <div class="event-header">
+                <h3>Annual Tech Conference 2024</h3>
+                <p>June 30, 2024 | Silicon Valley, CA</p>
+              </div>
               <img
-                src="/Default_online_course_program_image_1.jpg"
-                alt="Scholarship"
+                src="/Default_A_professional_background_image_showcasing_a_modern_of_2.jpg"
+                alt="Event Image"
+                class="event-img"
               />
-              <h3>Mentorship program</h3>
-              <p>
-                Get guidance from experienced professionals through our
-                mentorship program.
-              </p>
-              <a href="scholarship-application.html" className="read-more">
-                Learn more
+              <div class="event-description">
+                <p>
+                  Join us for the Annual Tech Conference 2024, where industry
+                  leaders and tech enthusiasts come together to explore the
+                  latest trends and innovations in technology. The event will
+                  feature keynote speeches, panel discussions, and networking
+                  opportunities.
+                </p>
+              </div>
+              <a href="#" class="cta-button">
+                Register Now
               </a>
+              <div class="contact-info">
+                <p>
+                  For more information, contact us at{" "}
+                  <a href="mailto:info@techconference.com">
+                    info@techconference.com
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
-          <Link className="btn">View All Opportunities</Link>
+          <Link className="btn" href="#">
+            See All Events
+            <svg
+              className="btn-icon"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m7 16 4-4-4-4m6 8 4-4-4-4"
+              />
+            </svg>
+          </Link>
         </div>
       </div>
 
       <div className="articles-container">
-  <div className="articles-section">
-    <h2>Latest articles</h2>
-    <p>
-      Hear from our community members who have achieved their career and
-      academic goals with the help of TechGuide Hub. Get inspired by their
-      journeys and start your own success story today.
-    </p>
-    <div className="articles">
-      <div className="card-article">
-        <div className="article-img">
-          <img
-            src="/Default_look_good_3.jpg"
-            className="card-img"
-            alt="article img"
-          />
-          <div className="labels">
-            <small className="tag">Career</small>
-            <small className="date">Aug 26th, 2014</small>
-          </div>
-        </div>
-        <div className="articles-content">
-          <h3 className="card-title">Article Title 1</h3>
-          <p className="card-description">
-            This is a brief description of the article. It provides a
-            quick summary to catch the reader's interest.
+        <div className="articles-section">
+          <h2>Latest articles</h2>
+          <p>
+            Hear from our community members who have achieved their career and
+            academic goals with the help of TechGuide Hub. Get inspired by their
+            journeys and start your own success story today.
           </p>
-          <a href="#" className="read-more">
-            Read More
+          <div className="articles">
+            <div className="card-article">
+              <div className="article-img">
+                <img
+                  src="/Default_look_good_3.jpg"
+                  className="card-img"
+                  alt="article img"
+                />
+                <div className="labels">
+                  <small className="tag">Career</small>
+                  <small className="date">Aug 26th, 2014</small>
+                </div>
+              </div>
+              <div className="articles-content">
+                <h3 className="card-title">Article Title 1</h3>
+                <p className="card-description">
+                  This is a brief description of the article. It provides a
+                  quick summary to catch the reader's interest.
+                </p>
+                <a href="#" className="read-more">
+                  Read More
+                </a>
+              </div>
+            </div>
+            <div className="card-article">
+              <div className="article-img">
+                <img
+                  src="/Default_look_good_3.jpg"
+                  className="card-img"
+                  alt="article img"
+                />
+                <div className="labels">
+                  <small className="tag">Career</small>
+                  <small className="date">Aug 26th, 2014</small>
+                </div>
+              </div>
+              <div className="articles-content">
+                <h3 className="card-title">Article Title 2</h3>
+                <p className="card-description">
+                  This is a brief description of the article. It provides a
+                  quick summary to catch the reader's interest.
+                </p>
+                <a href="#" className="read-more">
+                  Read More
+                </a>
+              </div>
+            </div>
+            <div className="card-article">
+              <div className="article-img">
+                <img
+                  src="/Default_look_good_3.jpg"
+                  className="card-img"
+                  alt="article img"
+                />
+                <div className="labels">
+                  <small className="tag">Career</small>
+                  <small className="date">Aug 26th, 2014</small>
+                </div>
+              </div>
+              <div className="articles-content">
+                <h3 className="card-title">Article Title 3</h3>
+                <p className="card-description">
+                  This is a brief description of the article. It provides a
+                  quick summary to catch the reader's interest.
+                </p>
+                <a href="#" className="read-more">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <a className="btn" href="#">
+            See All Articles
+            <svg
+              className="btn-icon"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m7 16 4-4-4-4m6 8 4-4-4-4"
+              />
+            </svg>
           </a>
         </div>
       </div>
-      <div className="card-article">
-        <div className="article-img">
-          <img
-            src="/Default_look_good_3.jpg"
-            className="card-img"
-            alt="article img"
-          />
-          <div className="labels">
-            <small className="tag">Career</small>
-            <small className="date">Aug 26th, 2014</small>
-          </div>
-        </div>
-        <div className="articles-content">
-          <h3 className="card-title">Article Title 2</h3>
-          <p className="card-description">
-            This is a brief description of the article. It provides a
-            quick summary to catch the reader's interest.
-          </p>
-          <a href="#" className="read-more">
-            Read More
-          </a>
-        </div>
-      </div>
-      <div className="card-article">
-        <div className="article-img">
-          <img
-            src="/Default_look_good_3.jpg"
-            className="card-img"
-            alt="article img"
-          />
-          <div className="labels">
-            <small className="tag">Career</small>
-            <small className="date">Aug 26th, 2014</small>
-          </div>
-        </div>
-        <div className="articles-content">
-          <h3 className="card-title">Article Title 3</h3>
-          <p className="card-description">
-            This is a brief description of the article. It provides a
-            quick summary to catch the reader's interest.
-          </p>
-          <a href="#" className="read-more">
-            Read More
-          </a>
-        </div>
-      </div>
-    </div>
-    <a className="btn" href="#">
-      See All Articles
-      <svg
-        className="btn-icon"
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        fill="none"
-        viewBox="0 0 24 24"
-      >
-        <path
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="m7 16 4-4-4-4m6 8 4-4-4-4"
-        />
-      </svg>
-    </a>
-  </div>
-</div>
-
     </div>
   );
 }

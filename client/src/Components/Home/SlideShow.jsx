@@ -67,6 +67,7 @@ const MyCarousel = () => {
         <div className="carousel-container">
             <Carousel
                 className="sliding"
+                interval={3000}
                 renderArrowPrev={customArrowPrev}
                 renderArrowNext={customArrowNext}
                 showArrows={true}

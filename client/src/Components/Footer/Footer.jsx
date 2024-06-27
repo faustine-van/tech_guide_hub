@@ -99,16 +99,10 @@ function Footer() {
         <div className="footer-securty-menu">
           <div className="footer-menu-column">
             <a className="footer-link" href="#1">
-              Terms
+              Terms of use
             </a>
             <a className="footer-link" href="#2">
               Privacy policy
-            </a>
-            <a className="footer-link" href="#3">
-              Job Advice
-            </a>
-            <a className="footer-link" href="#4">
-              Learning Materials
             </a>
           </div>
         </div>
