@@ -14,6 +14,7 @@ import {
   FaDesktop,
   FaCalendarAlt,
   FaUserFriends,
+  FaArchive,
 } from "react-icons/fa";
 
 import "./Navbar.css";
@@ -28,6 +29,10 @@ function Navbar() {
   };
   // initializes activeDropdown to null, no dropdown is open by default.
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const handleLinkClick = () => {
+    setActiveDropdown(false);
+  };
+  
   // handling active dropdown
   const handleDropdown = (dropdown) => {
     setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
@@ -38,10 +43,11 @@ function Navbar() {
         <div className="navbar-left">
           <div className="logo-container">
             <img
-              src="/techguide-logo.png"
+              src="/Default_The_SkillQuanta_logo_exudes_quality_and_precision_with_0-removebg-preview.png"
               alt="TechGuide Hub Logo"
               height="50"
             />
+            <h2 className="logo-text">SkillQuanta</h2>
           </div>
           <div className={isMenuOpen ? "side-menu open" : "navbar-menu"}>
             <NavLink
@@ -62,22 +68,22 @@ function Navbar() {
                 <div className="dropdown-content">
                   <div className="mega-menu">
                     <div className="mega-menu-column1">
-                      <a href="#" className="link">
+                      <a href="#" className="link" onClick={handleLinkClick}>
                         <FaGraduationCap className="icon" /> Scholarships
                       </a>
-                      <a href="#" className="link">
+                      <a href="#" className="link" onClick={handleLinkClick}>
                         <FaBriefcase className="icon" /> Jobs
                       </a>
-                      <a href="#" className="link">
+                      <a href="#" className="link" onClick={handleLinkClick}>
                         <FaDesktop className="icon" /> Online Courses
                       </a>
-                      <a href="#" className="link">
+                      <a href="#" className="link" onClick={handleLinkClick}>
                         <FaCalendarAlt className="icon" /> Events
                       </a>
-                      <a href="#" className="link">
+                      <a href="#" className="link" onClick={handleLinkClick}>
                         <FaCalendarAlt className="icon" /> Internships
                       </a>
-                      <a className="link">
+                      <a className="link" onClick={handleLinkClick}>
                         <FaUserFriends className="icon" /> Mentorship Programs
                       </a>
                     </div>
@@ -93,36 +99,40 @@ function Navbar() {
                 <div className="dropdown-content">
                   <div className="mega-menu">
                     <div className="mega-menu-column">
-                      <a href="#1" className="link">
+                      <NavLink to="/blogs/entire-article-collections" className="link" onClick={handleLinkClick}>
+                        {" "}
+                        <FaArchive className="icon" /> Entire Article Collection{" "}
+                      </NavLink>
+                      <a href="#1" className="link" onClick={handleLinkClick} >
                         {" "}
                         <FaLightbulb className="icon" /> Career Tips{" "}
                       </a>
-                      <a href="#2" className="link">
+                      <a href="#2" className="link" onClick={handleLinkClick}>
                         {" "}
                         <FaUsers className="icon" />
                         Professional Insights{" "}
                       </a>
-                      <a href="#3" className="link">
+                      <a href="#3" className="link" onClick={handleLinkClick}>
                         <FaBriefcase className="icon" />
                         Job Advice
                       </a>
-                      <a href="#3" className="link">
+                      <a href="#3" className="link" onClick={handleLinkClick}>
                         {" "}
                         <FaBook className="icon" /> Learning Materials
                       </a>
                     </div>
                     <div className="mega-menu-column">
-                      <a href="#job1" className="link">
+                      <a href="#job1" className="link" onClick={handleLinkClick}>
                         <FaBuilding className="icon" /> Developer Stories
                       </a>
-                      <a href="#job2" className="link">
+                      <a href="#job2" className="link" onClick={handleLinkClick}>
                         <FaBook className="icon" /> Resources Articles
                       </a>
-                      <a href="#job3" className="link">
+                      <a href="#job3" className="link" onClick={handleLinkClick}>
                         <FaTools className="icon" />
                         Skill Building
                       </a>
-                      <a href="#job3" className="link">
+                      <a href="#job3" className="link" onClick={handleLinkClick}>
                         <FaUser className="icon" />
                         Developer Insights
                       </a>

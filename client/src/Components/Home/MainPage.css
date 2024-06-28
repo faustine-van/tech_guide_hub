@@ -38,6 +38,7 @@
 .articles-section h2{
   font-size: 2em;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 /* about section */
@@ -207,7 +208,7 @@
   display: inline-block;
   padding: 10px 20px;
   color: white;
-  background-color: var(--primary-color);
+  background-color: var(--button-color);
   border: none;
   border-radius: 4px;
   text-decoration: none;
@@ -215,7 +216,9 @@
   transition: background-color 0.3s;
 }
 .cta-button:hover {
-  background-color: var(--seconda-color);
+  background-color: var(--primary-color);
+  color: white;
+
 }
 .contact-info {
   margin-top: 20px;
@@ -340,7 +343,7 @@
 .btn {
   text-decoration: none;
   font-size: var(--font-size-md);
-  color: var(--primary-color);
+  color: var(--button-color);
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -349,6 +352,8 @@
 .btn:hover {
   text-decoration: underline;
   color: var(--primary-color);
+  animation: shake_up_bottom 2s infinite;
+
 }
 
 .btn-icon {
@@ -357,6 +362,17 @@
 }
 
 
+@keyframes shake_up_bottom {
+  0%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(5px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
 
 /* Media Queries for smaller screens */
 @media (max-width: 768px) {

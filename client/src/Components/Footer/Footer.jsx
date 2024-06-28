@@ -3,6 +3,7 @@ import { FaSquareXTwitter, FaLinkedin } from "react-icons/fa6";
 import { FaFacebookSquare, FaWhatsappSquare } from "react-icons/fa";
 
 import "./Footer.css";
+import { Newsletter } from "../Blog/NewsLetters";
 
 function Footer() {
   return (
@@ -10,7 +11,12 @@ function Footer() {
       <div className="footer-content">
         <div className="social-logo-containers">
           <div className="footer-logo-container">
-            <img src="/techguide-white-logo.png" alt="TechGuide Hub Logo" />
+            <img
+              src="/Default_The_SkillQuanta_logo_exudes_quality_and_precision_with_0-removebg-preview.png"
+              alt="TechGuide Hub Logo"
+              height="50"
+            />
+            <h2 className="logo-text">SkillQuanta</h2>
           </div>
           <div className="footer-social-media">
             {/* <!-- Social media icons --> */}
@@ -82,16 +88,10 @@ function Footer() {
           <a className="footer-link">Mentorship Programs</a>
         </div>
         <div className="footer-newsletter">
-          <div className="newsletter">
-            <h2>Stay Updated with TechGuide Hub</h2>
-            <p>Subscribe to our newsletter</p>
-            <div className="input">
-              <input type="email" placeholder="Enter your email" />
-              <button className="submit" type="submit">
-                Subscribe
-              </button>
-            </div>
-          </div>
+        <h2>Stay Updated with TechGuide Hub</h2>
+        <p>Subscribe to our newsletter</p>
+        <Newsletter />
+
         </div>
       </div>
       <div className="footer-copyright">

@@ -286,6 +286,8 @@ function MainPage() {
           </a>
         </div>
       </div>
+     
+    
     </div>
   );
 }

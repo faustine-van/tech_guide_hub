@@ -24,9 +24,6 @@
 
 }
 
-
-
-
 .hero-paragraph {
     margin-bottom: 1rem; /* mb-6 */
     font-size: 1.125rem; /* text-lg */
@@ -45,7 +42,7 @@
     font-size: var(--font-size-md);
     text-align: center; /* text-center */
     color: #fff; /* text-white */
-    background-color: var(--primary-color); /* bg-blue-700 */
+    background-color: var(--button-color); /* bg-blue-700 */
     border-radius: 0.5rem; /* rounded-lg */
     transition: background-color 0.3s;
     text-decoration: none;
@@ -53,7 +50,7 @@
 
 .hero-button:hover {
     color: white;
-    background-color: #1e40af; /* hover:bg-blue-800 */
+    background-color: var(--primary-color);
 }
 
 

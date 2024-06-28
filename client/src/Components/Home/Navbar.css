@@ -18,8 +18,12 @@
 }
 
 .logo-container {
-  width: 200px;
-  /* border: 1px solid blue; */
+  /* width: 200px; */
+  /*edit*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 .logo {
@@ -119,14 +123,14 @@
   align-items: center;
   border-radius: 10px;
   color: white;
-  background-color: var(--primary-color);
+  background-color: var(--button-color);
   cursor: pointer;
   font-weight: var(--font-weight-bold);
   transition: background-color 0.3s;
 }
 
 .search-icon:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .search-container {
@@ -158,6 +162,7 @@
   padding: 10px;
   cursor: pointer;
 }
+
 .menu-toggle {
   display: none;
   background-color: var(--background-color);
