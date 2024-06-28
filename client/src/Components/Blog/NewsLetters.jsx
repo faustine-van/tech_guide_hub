@@ -5,7 +5,7 @@ export function Newsletter() {
         <div className="newsletter">
             <div className="input">
                 <input type="email" placeholder="Enter your email" />
-                <button className="submit" type="submit">
+                <button className="navbar-subscribe" type="submit">
                  Subscribe
                 </button>
             </div>
@@ -26,7 +26,7 @@ function NewsLetters() {
             
 
                 <h1>Stay Updated with TechGuide Hub</h1>
-                <p> Join our mailing list to receive the latest tech news, insights, and tips
+                <p className='subscription-desc'> Join our mailing list to receive the latest tech news, insights, and tips
                     directly in your inbox. Our newsletter covers a wide range of topics including
                     career advice, professional insights, job tips, learning materials, and more from the tech world.</p>
                 <Newsletter />

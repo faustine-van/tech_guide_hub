@@ -145,12 +145,17 @@ function Navbar() {
           </div>
         </div>
         <div className="navbar-right">
+       
+        
           {/* Search icon visibility controlled by isSearchOpen state */}
           {!isSearchOpen && (
             <div className="search-icon" onClick={toggleSearch}>
-              <FaSearch className="icon" /> Search
+              <FaSearch className="icon" />
             </div>
           )}
+           <button className="navbar-subscribe" type="submit" >
+            Subscribe               
+          </button>
           <div
             className="menu-toggle"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -217,7 +222,9 @@ function Navbar() {
               </div>
             </div>
           )}
+           
         </div>
+
       </div>
     </>
   );

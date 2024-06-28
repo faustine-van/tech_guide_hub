@@ -6,7 +6,6 @@
 }
 /* News-letters */
 .News-letters {
-
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -18,7 +17,9 @@
     padding: 20px;
     box-sizing: border-box;
 }
-
+.news-letter-contents .subscription-desc {
+    padding-right: 50px;
+}
 .newsletter-img {
     box-sizing: border-box;
     width: 500px;
@@ -83,4 +84,17 @@
     border-left: 3px solid var(--accent-color);
     font-style: italic;
     color: gray;
+}
+@media screen  and (max-width: 768px) {
+    .News-letters {
+        gap: 30px;
+    }
+    .newLetterCircle {
+        top: 60%;
+
+    }
+    .news-letter-contents .subscription-desc {
+        padding-right: 0px;
+    }
+    
 }
