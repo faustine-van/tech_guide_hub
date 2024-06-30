@@ -2,22 +2,28 @@ import React from 'react';
 
 function FeaturedArticles() {
     return (
-        <section className="featured-articles">
-            <h2>Featured Articles</h2>
-            <div className="articles-list">
-                {/* Replace with dynamic data */}
-                <article>
-                    <h3>Title of the Featured Article 1</h3>
-                    <p>Summary of the featured article 1...</p>
-                    <a href="/article/1">Read More</a>
-                </article>
-                <article>
-                    <h3>Title of the Featured Article 2</h3>
-                    <p>Summary of the featured article 2...</p>
-                    <a href="/article/2">Read More</a>
-                </article>
-            </div>
-        </section>
+        <div className="featured-articles">
+        <h2>Featured Articles</h2>
+        <div className="main-article">
+          <img
+            src="/Default_tech_world_0.jpg"
+            alt=""
+            className="main-article-image"
+          />
+          <div className="main-article-content">
+            <h1>Tech world</h1>
+            <p>
+              Hear from our community members who have achieved their
+              career and academic goals with the help of TechGuide Hub.
+              Get inspired by their journeys and start your own success
+              story today.
+            </p>
+            <a href="#" class="cta-button">
+              Read more
+            </a>
+          </div>
+        </div>
+      </div>
     );
 }
 

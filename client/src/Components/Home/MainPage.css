@@ -128,7 +128,7 @@
   background-image: url('/Default_technologies_blog_and_tech_no_word_3.jpg');
   background-size: cover;
   background-position: center;
-  border-top: 5px solid var(--primary-color);
+  /* border-top: 5px solid var(--primary-color); */
 }
 
 
@@ -169,9 +169,8 @@
 
   max-width: 500px;
   padding: 20px;
-  border: 1px solid #ddd;
   border-radius: var(--border-radius-xlg);
-  background-color: var(--background-color);
+  background-color: #fff;
   box-shadow: var(--box-shadow-lg);
 }
 .event-header {
@@ -266,7 +265,9 @@
   width: 300px;
   transition: transform 0.2s;
   font-size: var(--font-size-md);
+  
 }
+
 
 .card-article:hover {
   transform: scale(1.05);

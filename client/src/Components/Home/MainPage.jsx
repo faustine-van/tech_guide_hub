@@ -1,11 +1,45 @@
 import React from "react";
 import { FaBriefcase, FaTools, FaBook } from "react-icons/fa";
+
 import SSlider from "./SlideShow";
+import SponsorCard from "./SponsorCard";
 
 import "./MainPage.css";
+
 import { Link } from "react-router-dom";
 
 function MainPage() {
+  
+  const sponsors = [
+    {
+      name: "Platinum Sponsor",
+      logo: "/pngwing.com.png",
+      link: "https://platinumsponsor.com",
+    },
+    {
+      name: "Gold Sponsor",
+      logo: "/techguide-logo.png",
+      link: "https://goldsponsor.com",
+    },
+    {
+      name: "Silver Sponsor",
+      logo: "/silver-badge-awards.png",
+      link: "https://silversponsor.com",
+    },
+    {
+      name: "Silver Sponsor",
+      logo: "/google spondor.png",
+      link: "https://silversponsor.com",
+    },
+    {
+      name: "Silver Sponsor",
+      logo: "/pepsl.png",
+      link: "https://silversponsor.com",
+    },
+    
+    
+  ];
+
   return (
     <div className="homepage">
       <div className="slide-show">
@@ -61,6 +95,20 @@ function MainPage() {
           <div className="about-img">
             <img src="/about-img.png" alt="about" />
           </div>
+        </div>
+      </div>
+
+      <div className="sponsors-container">
+        {/* <h2>Our Sponsors</h2> */}
+        <div className="sponsors">
+          {sponsors.map((sponsor, index) => (
+            <SponsorCard
+              key={index}
+              name={sponsor.name}
+              logo={sponsor.logo}
+              link={sponsor.link}
+            />
+          ))}
         </div>
       </div>
 
@@ -286,8 +334,6 @@ function MainPage() {
           </a>
         </div>
       </div>
-     
-    
     </div>
   );
 }

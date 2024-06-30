@@ -1,0 +1,34 @@
+/* style for sponsors */
+.sponsors-container {
+    text-align: center;
+    background-color: var( --background-grey-color);
+  }
+  
+  .sponsors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .sponsor-card {
+    max-width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  .sponsor-card:hover {
+    transform: scale(1.05);
+  }
+  .sponsor-logo {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: cover; 
+  }
+  
+  .sponsor-name {
+    font-size: 1rem;
+    color: #333;
+  }
+  
