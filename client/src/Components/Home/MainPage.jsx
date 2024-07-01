@@ -243,7 +243,7 @@ function MainPage() {
             journeys and start your own success story today.
           </p>
           <Articles />
-          <a className="btn" href="#">
+          <Link className="btn" to="/blogs/entire-article-collections">
             See All Articles
             <svg
               className="btn-icon"
@@ -262,7 +262,7 @@ function MainPage() {
                 d="m7 16 4-4-4-4m6 8 4-4-4-4"
               />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

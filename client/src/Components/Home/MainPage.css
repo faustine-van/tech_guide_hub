@@ -261,7 +261,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 300px;
+  max-width: 300px;
   transition: transform 0.2s;
   font-size: var(--font-size-md);
   
@@ -342,7 +342,7 @@
    line-height: 1;
    border: 2px solid var(--button-color);
    color: var(--button-color);
-   padding: 0.5em 1em;
+   padding: 0.3em 1em;
    border-radius: 6px;
    font-weight: 500;
    display: inline-flex;
@@ -408,5 +408,9 @@
 
   .events{
     flex-wrap: wrap;
+  }
+  .info {
+    font-size: var(--font-size-sm);
+ 
   }
 }

@@ -1,5 +1,9 @@
 import React from 'react';
-import { FaEnvelope } from 'react-icons/fa';
+import { FaEnvelope, FaFacebookSquare, FaLinkedin, FaWhatsappSquare } from 'react-icons/fa';
+
+import './NewsLetters.css';
+import { FaSquareXTwitter } from 'react-icons/fa6';
+
 export function Newsletter() {
     return (
         <div className="newsletter">
@@ -34,9 +38,28 @@ function NewsLetters() {
                 <p>Unlock Exclusive Content!</p>
                 </div>
                 <div className="social-media-links">
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <div className="social-btns">
+              <div className="social">
+                <a className="social-btn facebook" href="#">
+                  <FaFacebookSquare />
+                </a>
+              </div>
+              <div className="social">
+                <a className="social-btn twitter" href="#">
+                  <FaSquareXTwitter />
+                </a>
+              </div>
+              <div className="social">
+                <a className="social-btn whatsapp" href="#">
+                  <FaWhatsappSquare />
+                </a>
+              </div>
+              <div className="social">
+                <a className="social-btn linkedin" href="#">
+                  <FaLinkedin />
+                </a>
+              </div>
+            </div>
                 </div>
                 <div className="testimonials">
                     <h3>What our subscribers say</h3>

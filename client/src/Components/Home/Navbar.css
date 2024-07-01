@@ -63,9 +63,10 @@
 
 }
 
-.dropdn {
+
+.dropdn:hover {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--primary-color);
   white-space: nowrap;
 }
 

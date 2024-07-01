@@ -1,6 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Link } from 'react-router-dom';
 function FeaturedArticles() {
     return (
         <div className="featured-articles">
@@ -31,14 +32,14 @@ function FeaturedArticles() {
               Get inspired by their journeys and start your own success
               story today.
             </p>
-            <a href="#" className="cta-button">
+            <Link to='/blogs/articles-detail' className="cta-button">
               Read more
-            </a>
+            </Link>
           </div>
         </div>
         <div className="main-article">
           <img
-            src="/Default_tech_world_0.jpg"
+            src="/Default_blog_website_for_tech_world_3.jpg"
             alt=""
             className="main-article-image"
           />

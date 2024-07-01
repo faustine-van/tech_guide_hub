@@ -89,12 +89,13 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: padding 0.4s ease-in-out;
+  transition: padding 0.8s ease-in, background-color 0.8s ease-in;
 }
 
 .social-btns .social:hover {
-  padding: 5px;
-  background-color: var(--secondary-color);
+  background-color: var(--accent-color);
+  color: white;
+  padding: 4px;
 }
 
 .social-btns .social-btn {
@@ -105,11 +106,10 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+
 }
 
-.social-btns .social-btn:hover {
-  color: #fff;
-}
+
 
 /* footer copyright */
 
