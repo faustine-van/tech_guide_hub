@@ -2,22 +2,12 @@ import React from 'react';
 
 function PopularArticles() {
     return (
-        <section className="popular-articles">
-            <h2>Popular Articles</h2>
-            <div className="articles-list">
-                {/* Replace with dynamic data */}
-                <article>
-                    <h3>Title of the Popular Article 1</h3>
-                    <p>Summary of the popular article 1...</p>
-                    <a href="/article/5">Read More</a>
-                </article>
-                <article>
-                    <h3>Title of the Popular Article 2</h3>
-                    <p>Summary of the popular article 2...</p>
-                    <a href="/article/6">Read More</a>
-                </article>
+        <article className="popular-articles-content">
+            <h4 class="title">Hear From Our Learners: The Value of ALX AiCE</h4>
+            <p class="info">Elemenatary tracks all the events for the day as you scheduled and you will never have to worry.</p>
+            <div className="label">                    <span class="tag">Feature</span>                     <span class="date">June 13, 2024</span>
             </div>
-        </section>
+        </article>
     );
 }
 
