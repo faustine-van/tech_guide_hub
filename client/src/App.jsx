@@ -4,8 +4,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import MainPage from './Components/Home/MainPage';
 import Opportunities from './Components/Opportunities/Opportunities';
 import Blog from './Components/Blog/Blog';
-import Layout from './Components/Layout';
 import ArticleDetail from './Components/Blog/ArticleDetail';
+import Events from './Components/Events/Events';
+
 
 // css
 import './App.css';
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <MainPage />,
+      },
+      {
+        path: "/events",
+        element: <Events />,
       },
       {
         path: "/opportunities",

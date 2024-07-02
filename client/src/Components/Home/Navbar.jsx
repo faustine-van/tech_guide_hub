@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {
   FaLightbulb,
   FaUser,
@@ -77,9 +77,9 @@ function Navbar() {
                       <a href="#" className="link" onClick={handleLinkClick}>
                         <FaDesktop className="icon" /> Online Courses
                       </a>
-                      <a href="#" className="link" onClick={handleLinkClick}>
+                      <Link to='/events' className="link" onClick={handleLinkClick}>
                         <FaCalendarAlt className="icon" /> Events
-                      </a>
+                      </Link>
                       <a href="#" className="link" onClick={handleLinkClick}>
                         <FaCalendarAlt className="icon" /> Internships
                       </a>

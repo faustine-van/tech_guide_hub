@@ -1,5 +1,3 @@
-
-
 .btn {
   padding-bottom: 10px;
   font-size: var(--font-size-md);
@@ -123,86 +121,6 @@
 
 
 /* opportunities section */
-.event-containers {
-  position: relative;
-  background-image: url('/Default_technologies_blog_and_tech_no_word_3.jpg');
-  background-size: cover;
-  background-position: center;
-  /* border-top: 5px solid var(--primary-color); */
-}
-
-
-/* Add a dark overlay for better text contrast */
-.event-containers::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-}
-
-/*event section*/
-.events-section{
-  position: relative;
-  z-index: 2;
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-
-}
-.events-section .event-head{
-  color: white;
-}
-.events{
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-.event {
-  color: var(--text-color);
-
-  max-width: 500px;
-  padding: 20px;
-  border-radius: var(--border-radius-xlg);
-  background-color: #fff;
-  box-shadow: var(--box-shadow-lg);
-}
-.event-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.event-header h3 {
-  margin: 0;
-}
-.event-header p {
-  margin: 0;
-  font-size: var(--font-size-md);
-
-}
-.event-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-.event-description {
-  margin-bottom: 20px;
-  font-size: var(--font-size-md);
-  width: 100%;
-           /* this code clamps based on specified lines */
-           overflow: hidden;
-          -webkit-box-orient: vertical;
-         -webkit-line-clamp: 3;
-         display: -webkit-box;
-
-}
 .cta-button {
   display: inline-block;
   padding: 10px 20px;

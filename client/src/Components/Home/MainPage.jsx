@@ -112,7 +112,7 @@ function MainPage() {
         </div>
       </div>
 
-      <div className="event-containers">
+      {/* <div className="event-containers">
         <div className="events-section">
           <h2 className="event-head">Upcoming events</h2>
           <div className="events">
@@ -231,7 +231,7 @@ function MainPage() {
             </svg>
           </Link>
         </div>
-      </div>
+      </div> */}
 
       <div className="articles-container">
         <div className="articles-section">
