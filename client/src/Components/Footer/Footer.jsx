@@ -88,10 +88,9 @@ function Footer() {
           <a className="footer-link">Mentorship Programs</a>
         </div>
         <div className="footer-newsletter">
-        <h2>Stay Updated with TechGuide Hub</h2>
-        <p>Subscribe to our newsletter</p>
-        <Newsletter />
-
+          <h2>Stay Updated with TechGuide Hub</h2>
+          <p>Subscribe to our newsletter</p>
+          <Newsletter />
         </div>
       </div>
       <div className="footer-copyright">
@@ -103,6 +102,9 @@ function Footer() {
             </a>
             <a className="footer-link" href="#2">
               Privacy policy
+            </a>
+            <a className="footer-link" href="#2">
+              FAQ
             </a>
           </div>
         </div>

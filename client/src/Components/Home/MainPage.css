@@ -24,14 +24,13 @@
 
 /* Introduction Section */
 .intro-section,
-.events-section,
 .upcoming-events-section,
 .articles-section{
   padding: 50px 20px;
 }
 
 .intro-section h2,
-.events-section h2,
+/* .events-section h2, */
 .upcoming-events-section h2,
 .articles-section h2{
   font-size: 2em;
@@ -125,7 +124,7 @@
   display: inline-block;
   padding: 10px 20px;
   color: white;
-  background-color: var(--button-color);
+  background-color: var(--primary-color) ;
   border: none;
   border-radius: 4px;
   text-decoration: none;
@@ -133,7 +132,7 @@
   transition: background-color 0.3s;
 }
 .cta-button:hover {
-  background-color: var(--primary-color);
+  background-color: var(--button-color);
   color: white;
 
 }

@@ -124,7 +124,7 @@
   align-items: center;
   border-radius: 50%;
   color: white;
-  background-color: var(--button-color);
+  background-color: var(--primary-color);
   cursor: pointer;
   font-weight: var(--font-weight-bold);
   transition: background-color 0.3s;
@@ -132,7 +132,7 @@
 }
 
 .search-icon:hover {
-  background-color: var(--primary-color);
+  background-color: var(--button-color);
 }
 
 .search-container {

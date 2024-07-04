@@ -6,10 +6,14 @@ import Opportunities from './Components/Opportunities/Opportunities';
 import Blog from './Components/Blog/Blog';
 import ArticleDetail from './Components/Blog/ArticleDetail';
 import Events from './Components/Events/Events';
+import Layout from './Components/Layout';
+import Event from './Components/Events/Event';
+
 
 
 // css
 import './App.css';
+import Scholarships from './Components/Opportunities/Scholarships';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,6 +28,14 @@ const router = createBrowserRouter([
         element: <Events />,
       },
       {
+        path: "/event",
+        element: <Event />,
+      },
+      {
+        path: "/scholarships",
+        element: <Scholarships />,
+      },
+      {
         path: "/opportunities",
         element: <Opportunities />,
       },
@@ -32,7 +44,7 @@ const router = createBrowserRouter([
         element: <Blog />,
       },
       {
-        path: "/blogs/articles-detail",
+        path: "/blogs/article-detail",
         element: <ArticleDetail />,
       },
     ],

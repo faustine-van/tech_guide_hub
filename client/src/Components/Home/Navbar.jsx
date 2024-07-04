@@ -68,9 +68,9 @@ function Navbar() {
                 <div className="dropdown-content">
                   <div className="mega-menu">
                     <div className="mega-menu-column1">
-                      <a href="#" className="link" onClick={handleLinkClick}>
+                      <Link to='/scholarships' className="link" onClick={handleLinkClick}>
                         <FaGraduationCap className="icon" /> Scholarships
-                      </a>
+                      </Link>
                       <a href="#" className="link" onClick={handleLinkClick}>
                         <FaBriefcase className="icon" /> Jobs
                       </a>

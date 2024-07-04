@@ -20,24 +20,53 @@
     margin: 0 10px;
     padding: 10px;
 }
-
+.events-section{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
 .featured-events,
 .upcoming-events {
     padding: 20px;
 }
 
+.event-list{
+    display: flex;
+    justify-content: center;
+}
+
 .event-card {
-    border: 1px solid #ddd;
-    padding: 20px;
+    width: 400px;
     margin: 10px;
-    text-align: center;
+    border-radius: 10px;
+    overflow: hidden; /* Added to ensure the border radius affects the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added a subtle shadow for better visual separation */
 }
 
-.event-card img {
-    max-width: 100%;
-    height: auto;
+.event-img {
+    width: 100%;
+    height: 200px; 
+    overflow: hidden; 
 }
 
+.event-img img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+.event-content{
+    padding: 10px 20px 20px  20px;
+}
+.event-content .label{
+    display: flex;
+    justify-content: space-between;
+}
+.event-content p{
+    font-size: var(--font-size-sm);
+    margin: 0;
+    margin-bottom: 10px;
+
+}
 .event-btn {
     display: inline-block;
     padding: 10px 20px;
@@ -45,5 +74,8 @@
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-}
+} 
 
+
+  
+  

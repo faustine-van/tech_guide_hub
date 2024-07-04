@@ -32,7 +32,7 @@ function FeaturedArticles() {
               Get inspired by their journeys and start your own success
               story today.
             </p>
-            <Link to='/blogs/articles-detail' className="cta-button">
+            <Link to='/blogs/article-detail' className="cta-button">
               Read more
             </Link>
           </div>
