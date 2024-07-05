@@ -8,6 +8,7 @@ import ArticleDetail from './Components/Blog/ArticleDetail';
 import Events from './Components/Events/Events';
 import Layout from './Components/Layout';
 import Event from './Components/Events/Event';
+import AboutUs from './Components/AboutUs/AboutUs';
 
 
 
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <MainPage />,
+      },
+      {
+        path: "/about-us",
+        element: <AboutUs />,
       },
       {
         path: "/events",

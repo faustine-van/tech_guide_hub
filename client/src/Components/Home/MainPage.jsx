@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBriefcase, FaTools, FaBook } from "react-icons/fa";
+import { FaBriefcase, FaTools, FaBook, FaGift } from "react-icons/fa";
 
 import SSlider from "./SlideShow";
 import SponsorCard from "./SponsorCard";
@@ -7,9 +7,9 @@ import { Articles } from "../Blog/RecentArticles";
 import "./MainPage.css";
 
 import { Link } from "react-router-dom";
+import NewsLetters from "../Blog/NewsLetters";
 
 function MainPage() {
-  
   const sponsors = [
     {
       name: "Platinum Sponsor",
@@ -36,8 +36,6 @@ function MainPage() {
       logo: "/pepsl.png",
       link: "https://silversponsor.com",
     },
-    
-    
   ];
 
   return (
@@ -59,25 +57,13 @@ function MainPage() {
             <div className="highlights">
               <div>
                 <h3>
-                  {" "}
                   <FaBriefcase className="about-icon" />
-                  Career Development
+                  Career and Skill Development
                 </h3>
                 <p>
-                  Access job and internship listings, receive guidance on resume
-                  building, and read insightful career advice from industry
-                  professionals.
-                </p>
-              </div>
-              <div>
-                <h3>
-                  <FaTools className="about-icon" />
-                  Skill Development
-                </h3>
-                <p>
-                  Enhance your skills with our extensive library of learning
-                  resources, including tutorials, coding challenges, and online
-                  courses.
+                  Access articles on job and internship listings, get tips on
+                  resume building, and read insightful career advice from
+                  industry professionals.
                 </p>
               </div>
               <div>
@@ -86,11 +72,29 @@ function MainPage() {
                   Academic Support
                 </h3>
                 <p>
-                  Find study resources, tutoring services, and academic tips to
-                  excel in your studies.
+                  Find articles on study resources, tutoring services, and
+                  academic tips to excel in your studies.
+                </p>
+              </div>
+
+              <div>
+                <h3>
+                  <FaGift className="about-icon" />
+                  Opportunities
+                </h3>
+                <p>
+                  Discover exclusive opportunities such as scholarships, job
+                  openings, online courses, Mentorship program and special
+                  programs designed to help you advance your career and achieve
+                  your goals.
                 </p>
               </div>
             </div>
+            <div className="explore-button-container">
+        <button className="explore-button">
+          Explore More About TechGuide Hub
+        </button>
+      </div>
           </div>
           <div className="about-img">
             <img src="/about-img.png" alt="about" />
@@ -111,17 +115,18 @@ function MainPage() {
           ))}
         </div>
       </div>
-
-     
+      <div className="Blog-containers">
+        <NewsLetters />
+      </div>
 
       <div className="articles-container">
         <div className="articles-section">
           <h2>Latest articles</h2>
           <p>
-          Check out the most recent posts on our blog.
-            Hear from people's experience who have achieved their career and
-            academic goals with the help of TechGuide Hub. Get inspired by their
-            journeys and start your own success story today.
+            Check out the most recent posts on our blog. Hear from people's
+            experience who have achieved their career and academic goals with
+            the help of TechGuide Hub. Get inspired by their journeys and start
+            your own success story today.
           </p>
           <Articles />
           <Link className="btn" to="/blogs/entire-article-collections">

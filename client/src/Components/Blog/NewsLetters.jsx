@@ -30,9 +30,12 @@ function NewsLetters() {
             
 
                 <h1>Stay Updated with TechGuide Hub</h1>
-                <p className='subscription-desc'> Join our mailing list to receive the latest tech news, insights, and tips
-                    directly in your inbox. Our newsletter covers a wide range of topics including
-                    career advice, professional insights, job tips, learning materials, and more from the tech world.</p>
+                <p className='subscription-desc'>
+  Join our mailing list for the latest tech news, career advice, job tips, and learning materials. 
+  Stay updated with exclusive opportunities like scholarships, job openings, online courses, and special programs. 
+  Propel your tech journey forward with our valuable resources and insights.
+</p>
+
                 <Newsletter />
                 <div className="newLetterCircle">
                 <p>Unlock Exclusive Content!</p>

@@ -1,0 +1,45 @@
+.about-us {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+  }
+
+  .about-section{
+    padding: 20px;
+    margin: auto;
+    max-width: 1200px;
+  }
+  .about-intro, .our-story, .mission-vision-values, .meet-the-team, .our-community, .our-partners, .our-impact, .join-us, .contact-information {
+    margin-bottom: 40px;
+  }
+  
+  .team-member, .partner {
+    margin-bottom: 20px;
+  }
+  
+  .mission-vision-values ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .mission-vision-values ul li {
+    margin-bottom: 10px;
+  }
+  
+  .mission-vision-values blockquote {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #ccc;
+  }
+  
+  .mission-vision-values .social-media a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .mission-vision-values .social-media a:hover {
+    text-decoration: underline;
+  }
+  

@@ -10,7 +10,7 @@ const MyCarousel = () => {
             id: 1,
             box: {
                 heading: 'Scholarships',
-                buttonLabel: 'Explore',
+                buttonLabel: 'Explore Scholarships',
                 content: 'Apply for our annual scholarship program to get financial support for your studies.'
             },
         },
@@ -18,7 +18,7 @@ const MyCarousel = () => {
             id: 2,
             box: {
                 heading: 'Online Courses',
-                buttonLabel: 'Explore',
+                buttonLabel: 'Explore Online Courses',
                 content: 'Enhance your skills with our comprehensive online courses available in various domains.'
             },
         },
@@ -26,7 +26,7 @@ const MyCarousel = () => {
             id: 3,
             box: {
                 heading: 'Events',
-                buttonLabel: 'Explore',
+                buttonLabel: 'Explore Events',
                 content: 'Stay updated with the latest industry events and workshops.'
             },
         },
@@ -34,7 +34,7 @@ const MyCarousel = () => {
             id: 4,
             box: {
                 heading: 'Mentorship Program',
-                buttonLabel: 'Explore',
+                buttonLabel: 'Explore Mentorship Programs',
                 content: 'Get guidance from experienced professionals through our mentorship program.'
             },
         },
@@ -42,7 +42,7 @@ const MyCarousel = () => {
             id: 5,
             box: {
                 heading: 'Internships',
-                buttonLabel: 'Explore',
+                buttonLabel: 'Explore Internships',
                 content: 'Apply for internships to gain practical experience and kickstart your career.'
             },
         },

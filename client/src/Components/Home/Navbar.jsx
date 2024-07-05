@@ -56,7 +56,7 @@ function Navbar() {
             >
               Home
             </NavLink>
-            <a className="link about">About Us</a>
+            <Link to='/about-us' className="link about">About Us</Link>
             <div className="dropdown link">
               <a
                 className="dropdn"
