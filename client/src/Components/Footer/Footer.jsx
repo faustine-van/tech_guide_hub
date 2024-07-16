@@ -1,9 +1,10 @@
 import React from "react";
-import { FaSquareXTwitter, FaLinkedin } from "react-icons/fa6";
-import { FaFacebookSquare, FaWhatsappSquare } from "react-icons/fa";
+import { Newsletter } from "../ReusableComponents/NewsLetters";
+import SocialButtons from "../ReusableComponents/SocialButtons";
 
 import "./Footer.css";
-import { Newsletter } from "../Blog/NewsLetters";
+import { Link } from "react-router-dom";
+
 
 function Footer() {
   return (
@@ -21,71 +22,47 @@ function Footer() {
           <div className="footer-social-media">
             {/* <!-- Social media icons --> */}
             <h3>Follow us</h3>
-            <div className="social-btns">
-              <div className="social">
-                <a className="social-btn facebook" href="#">
-                  <FaFacebookSquare />
-                </a>
-              </div>
-              <div className="social">
-                <a className="social-btn twitter" href="#">
-                  <FaSquareXTwitter />
-                </a>
-              </div>
-              <div className="social">
-                <a className="social-btn whatsapp" href="#">
-                  <FaWhatsappSquare />
-                </a>
-              </div>
-              <div className="social">
-                <a className="social-btn linkedin" href="#">
-                  <FaLinkedin />
-                </a>
-              </div>
-            </div>
+            <SocialButtons />
+
           </div>
         </div>
 
         <div className="footer-links">
           <h3>Menu</h3>
-          <a className="footer-link" href="#home">
+          <Link to='/' className="footer-link">
             Home
-          </a>
-          <a className="footer-link" href="#about">
+          </Link>
+          <Link to='/about-us' className="footer-link" href="#about">
             About Us
-          </a>
-          <a className="footer-link" href="#opportunities">
-            Opportunities
-          </a>
-          <a className="footer-link" href="#events">
+          </Link>
+          
+          <Link to='/events' className="footer-link" href="#events">
             Events
-          </a>
-          <a className="footer-link" href="#blog">
+          </Link>
+          <Link  to ='/blogs/entire-article-collections' className="footer-link" href="#blog">
             Blog
-          </a>
-          <a className="footer-link" href="#contact">
-            Contact Us
-          </a>
+          </Link>
+        
         </div>
         <div className="footer-links">
           <h3>Opportunities</h3>
 
-          <a className="footer-link" href="#">
+          <Link className="footer-link" href="#">
             Scholarships
-          </a>
-          <a className="footer-link" href="#">
+          </Link>
+          <Link className="footer-link" href="#">
             Jobs
-          </a>
-          <a className="footer-link" href="#">
+          </Link>
+          <Link className="footer-link" href="#">
             Online Courses
-          </a>
-          <a className="footer-link" href="#">
+          </Link>
+          <Link className="footer-link" href="#">
             Events
-          </a>
-          <a className="footer-link" href="#">
+          </Link>
+          <Link className="footer-link" href="#">
             Internships
-          </a>
-          <a className="footer-link">Mentorship Programs</a>
+          </Link>
+          <Link className="footer-link">Mentorship Programs</Link>
         </div>
         <div className="footer-newsletter">
           <h2>Stay Updated with TechGuide Hub</h2>
@@ -97,15 +74,15 @@ function Footer() {
         <p>&copy; 2024 TechGuide Hub. All rights reserved.</p>
         <div className="footer-securty-menu">
           <div className="footer-menu-column">
-            <a className="footer-link" href="#1">
+            <Link className="footer-link" href="#1">
               Terms of use
-            </a>
-            <a className="footer-link" href="#2">
+            </Link>
+            <Link className="footer-link" href="#2">
               Privacy policy
-            </a>
-            <a className="footer-link" href="#2">
+            </Link>
+            <Link className="footer-link" href="#2">
               FAQ
-            </a>
+            </Link>
           </div>
         </div>
       </div>

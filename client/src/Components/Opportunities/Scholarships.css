@@ -1,10 +1,34 @@
+.scholarship-page {
+    
+}
+.scholarship-intro{
+    background: url('/Default_websites_for_event_designs_zoomwebnar_for_inspiration_3.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+.scholarship-section{
+    max-width: 1200px;
+    padding: 20px;
+    margin: auto;
+}
+.schoraships{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 .scholarship-card {
+    flex: 1 1 45%;
+    max-width: 45%;
     border: 1px solid #cedaf2;
     border-radius: 10px;
     padding: 20px;
-    margin-bottom: 20px;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: var(--font-size-sm);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -12,9 +36,30 @@
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.scholarship-details {
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+  .scholarship-header{
+    display: flex;
+    justify-content: space-between;
+  }
+  .intro-text {
+    margin: 5px 0;
+    max-width: 600px; /* Set a maximum width for the paragraph */
+    margin: 0 auto;
+    
+  }
+  
+  .scholarship-card .icon {
+    margin-right: 5px;
+  }
 
 .scholarship-card h3 {
     color: #215c83;
+    margin: 0;
     margin-bottom: 10px;
 }
 
@@ -23,7 +68,7 @@
     color: #333333;
 }
 
-.apply-link {
+.scholarship-link {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
@@ -34,6 +79,38 @@
     transition: background-color 0.3s ease;
 }
 
-.apply-link:hover {
+.scholarship-link:hover {
     background-color: #17405d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .scholarship-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .scholarship-details, .scholarship-header {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .scholarship-details p {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .scholarship-intro {
+        padding: 50px 20px;
+    }
+
+    .scholarship-card {
+        padding: 15px;
+        font-size: var(--font-size-xs);
+    }
+
+    .scholarship-link {
+        padding: 8px 12px;
+    }
 }

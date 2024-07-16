@@ -1,12 +1,11 @@
 import React from "react";
-import SearchBar from "../Blog/SearchBar";
+import SearchBar from '../ReusableComponents/SearchBar'
 import { CiLocationOn } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import { FaVideo } from 'react-icons/fa'; // Importing the virtual event icon
 
 
 import './Events.css'
-import { Newsletter } from "../Blog/NewsLetters";
 
 function Events() {
   return (

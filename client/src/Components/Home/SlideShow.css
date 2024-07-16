@@ -1,38 +1,53 @@
+/* SlideShow.css */
+
 .carousel-container {
-    max-width: 1200px;
+    /* max-width: 1200px;
     margin: auto;
-    padding: 20px;
+    padding: 20px; */
     color: white;
+
 }
 
 .sliding {
     width: 100%;
 }
 
-.item {
-    padding: 10px;
+.slide-show {
+    position: relative;
+    width: 100%;
+    height: 450px; /* Adjust as needed */
+    background-size: cover;
+    background-position: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 40px;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a dark overlay for better text visibility */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .hero-heading {
     margin-bottom: 1rem; /* mb-4 */
     letter-spacing: -0.05em; /* tracking-tight */
-
 }
 
 .hero-paragraph {
+    font-size: var(--font-size-sm);
+    color: var(--secondary-color);
     margin-bottom: 1rem; /* mb-6 */
-    font-size: 1.125rem; /* text-lg */
     word-wrap: break-word; /* Ensure text wraps correctly */
     word-break: break-all; /* Ensure long words break correctly */
     white-space: normal; /* Ensure text wraps */
-
 }
-
 
 .hero-button {
     display: inline-flex;
@@ -54,8 +69,6 @@
     background-color: var(--button-color);
 }
 
-
-
 .hero-button .hero-svg {
     width: 0.875rem; /* w-3.5 */
     height: 0.875rem; /* h-3.5 */
@@ -65,7 +78,6 @@
 .hero-button .hero-svg[dir="rtl"] {
     transform: rotate(180deg); /* rtl:rotate-180 */
 }
-
 
 .custom-prev-arrow,
 .custom-next-arrow {
@@ -100,9 +112,6 @@
     background-color: var(--border-color); /* Hover background color */
 }
 
-
-
-
 @media (max-width: 1024px) {
     .hero-paragraph {
         font-size: 1.25rem; /* lg:text-xl */ 
@@ -111,27 +120,18 @@
     }
 }
 
-@media (max-width: 1280px) {
-    .hero-paragraph {
-        padding-left: 12rem; /* xl:px-48 */
-        padding-right: 12rem; /* xl:px-48 */
-    }
-}
 @media (max-width: 768px) {
+    .overlay {
+        width: 80%;
+    }
     .hero-heading {
-        font-size: 2.25rem; /* text-4xl */
+        margin-bottom: 1rem; /* mb-4 */
+        font-size: var(--font-size-lg);
+        letter-spacing: -0.05em; /* tracking-tight */
     }
-    .custom-prev-arrow {
-        left: 2px; /* Position the previous arrow */
-    }
-    
-    .custom-next-arrow {
-        right: 2px; /* Position the next arrow */
-    }
-}
-
-@media (max-width: 1024px) {
-    .hero-heading {
-        font-size: 3.75rem; /* lg:text-6xl */
+    .hero-paragraph {
+        font-size: var(--font-size-sm); /* text-lg */
+        padding-left: 2.5rem; /* sm:px-10 */
+        padding-right: 2.5rem; /* sm:px-10 */
     }
 }

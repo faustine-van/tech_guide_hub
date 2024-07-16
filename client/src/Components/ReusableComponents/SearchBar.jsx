@@ -3,7 +3,7 @@ import React from 'react';
 function SearchBar() {
     return (
       <section class="search-filters">
-        <input type="text" placeholder="Search events..." />
+        <input type="text" placeholder="Search events, scholarship, online courses..." />
         <select>
           <option value="all">All Types</option>
           <option value="workshop">Workshops</option>

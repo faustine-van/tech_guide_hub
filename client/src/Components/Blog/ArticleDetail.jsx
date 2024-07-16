@@ -1,6 +1,6 @@
 import React from "react";
 import PopularArticle from "./PopularArticles";
-import { Newsletter } from "./NewsLetters";
+import { Newsletter } from "../ReusableComponents/NewsLetters";
 
 import "./ArticleDetail.css";
 

@@ -42,11 +42,13 @@ function Navbar() {
       <div className="navbar">
         <div className="navbar-left">
           <div className="logo-container">
+            <Link to='/'>
             <img
               src="/Default_The_SkillQuanta_logo_exudes_quality_and_precision_with_0-removebg-preview.png"
               alt="TechGuide Hub Logo"
               height="50"
             />
+            </Link>
             <h2 className="logo-text">SkillQuanta</h2>
           </div>
           <div className={isMenuOpen ? "side-menu open" : "navbar-menu"}>
@@ -141,7 +143,6 @@ function Navbar() {
                 </div>
               )}
             </div>
-            <a className="link contact">Contact Us</a>
           </div>
         </div>
         <div className="navbar-right">

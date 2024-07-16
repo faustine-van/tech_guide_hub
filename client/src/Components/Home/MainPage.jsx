@@ -1,13 +1,15 @@
 import React from "react";
 import { FaBriefcase, FaTools, FaBook, FaGift } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 
 import SSlider from "./SlideShow";
 import SponsorCard from "./SponsorCard";
 import { Articles } from "../Blog/RecentArticles";
+import NewsLetters from "../ReusableComponents/NewsLetters";
+
 import "./MainPage.css";
 
-import { Link } from "react-router-dom";
-import NewsLetters from "../Blog/NewsLetters";
 
 function MainPage() {
   const sponsors = [
@@ -40,9 +42,7 @@ function MainPage() {
 
   return (
     <div className="homepage">
-      <div className="slide-show">
-        <SSlider />
-      </div>
+      <SSlider />
 
       <div className="about-container">
         <div className="intro-section">
@@ -91,10 +91,10 @@ function MainPage() {
               </div>
             </div>
             <div className="explore-button-container">
-        <button className="explore-button">
-          Explore More About TechGuide Hub
-        </button>
-      </div>
+              <Link to='/about-us' className="explore-button">
+                Explore More About TechGuide Hub
+              </Link>
+            </div>
           </div>
           <div className="about-img">
             <img src="/about-img.png" alt="about" />

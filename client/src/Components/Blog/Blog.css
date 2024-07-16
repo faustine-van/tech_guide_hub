@@ -4,8 +4,6 @@
   margin: auto;
 }
 
-
-
 /* blog parts */
 .blog-articles {
   display: flex;
@@ -95,7 +93,7 @@
   border-radius: 50%;
 }
 
-.author-content {}
+/* .author-content {} */
 
 .author-content h3 {
   margin: 10px 0;
@@ -147,6 +145,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .Blog-containers h1{
+    margin: 10px;
+
+  }
   .articles{
     justify-content: center;
   }

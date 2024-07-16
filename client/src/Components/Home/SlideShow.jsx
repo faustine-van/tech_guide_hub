@@ -8,6 +8,7 @@ const MyCarousel = () => {
     const items = [
         {
             id: 1,
+            image: '/Default_developer_or_tech_entusiast_3.jpg',
             box: {
                 heading: 'Scholarships',
                 buttonLabel: 'Explore Scholarships',
@@ -16,6 +17,7 @@ const MyCarousel = () => {
         },
         {
             id: 2,
+            image: '/Default_tech_world_0.jpg',
             box: {
                 heading: 'Online Courses',
                 buttonLabel: 'Explore Online Courses',
@@ -24,6 +26,7 @@ const MyCarousel = () => {
         },
         {
             id: 3,
+            image: '/Default_look_good_3.jpg',
             box: {
                 heading: 'Events',
                 buttonLabel: 'Explore Events',
@@ -32,6 +35,7 @@ const MyCarousel = () => {
         },
         {
             id: 4,
+            image: '/Default_websites_for_event_designs_zoomwebnar_for_inspiration_3.jpg',
             box: {
                 heading: 'Mentorship Program',
                 buttonLabel: 'Explore Mentorship Programs',
@@ -40,6 +44,7 @@ const MyCarousel = () => {
         },
         {
             id: 5,
+            image: '/Default_website_for_A_professional_background_image_showcasing_3.jpg',
             box: {
                 heading: 'Internships',
                 buttonLabel: 'Explore Internships',
@@ -47,6 +52,7 @@ const MyCarousel = () => {
             },
         },
     ];
+
     const customArrowPrev = (clickHandler) => (
         <button className="custom-prev-arrow" onClick={clickHandler}>
             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -68,9 +74,10 @@ const MyCarousel = () => {
             <Carousel
                 className="sliding"
                 interval={3000}
-                renderArrowPrev={customArrowPrev}
-                renderArrowNext={customArrowNext}
-                showArrows={true}
+                // renderArrowPrev={customArrowPrev}
+                // renderArrowNext={customArrowNext}
+               
+                showArrows={false}
                 showStatus={false}
                 autoPlay={true}
                 infiniteLoop={true}
@@ -88,7 +95,7 @@ const MyCarousel = () => {
                             <hr
                                 style={{
                                     width: "40px",
-                                    height: "4px", // Changed height to 2px
+                                    height: "4px",
                                     borderRadius: "10px",
                                     backgroundColor: isSelected
                                         ? "rgb(33, 92, 131)"
@@ -102,27 +109,22 @@ const MyCarousel = () => {
                 }}
             >
                 {items.map(item => (
-
-                    <div key={item.id} className="item">
-                        <br />
-                        <h1>{item.box.heading}</h1>
-                        <p>
-                            {item.box.content}
-                        </p>
-                        <br />
-                        
-                        <Link to="/" className="hero-button">
-                            {item.box.buttonLabel}
-                            <svg className="hero-svg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                            </svg>
-                        </Link>
-
+                    <div key={item.id} className="slide-show" style={{ backgroundImage: `url(${item.image})` }}>
+                        <div className="overlay">
+                        <p className="hero-paragraph">
+                                {item.box.heading}
+                            </p>
+                            <h1 className="hero-heading">{ item.box.content}</h1>
+                            
+                            <Link to="/" className="hero-button">
+                                {item.box.buttonLabel}
+                                <svg className="hero-svg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                            </Link>
+                        </div>
                     </div>
-
-
                 ))}
-
             </Carousel>
         </div>
     );

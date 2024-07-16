@@ -1,45 +1,182 @@
 .about-us {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    line-height: 1.6;
+  line-height: var(--line-height-base);
+
+}
+
+/* .about-section{
+
+  } */
+
+.intro,
+.mission-vision-values,
+.communities,
+.partner-impact,
+.ContactModule {
+  margin-bottom: 40px;
+
+}
+
+/* about part 1 */
+.about-part1 {
+  background-color: var(--button-color);
+  color: white;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+
+
+}
+
+.about-intro-story {
+  width: 60%;
+}
+
+.about-intro-img {
+  width: 40%;
+}
+
+.about-intro-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intro,
+.mission-section,
+.mission-values,
+.communities,
+.partner-impact,
+.ContactModule {
+  padding: 20px;
+  margin: auto;
+  max-width: 1200px;
+}
+
+/* about part 2 */
+.about-part2 {}
+
+.mission-section {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+
+.values {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  text-align: center;
+}
+
+.mission-vision-values ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mission-vision-values ul li {
+  margin-bottom: 10px;
+}
+
+
+/* about part 3 */
+.about-part3 {
+  background-color: #2c3e50;
+  color: white;
+
+}
+
+.meet-the-team {
+  padding: 20px;
+
+}
+
+.meet-the-team h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.team-member,
+.partner {
+  margin-bottom: 20px;
+}
+
+.our-community blockquote {
+  margin: 20px 0;
+  padding: 10px 20px;
+  color: black;
+  border-left: 5px solid var(--accent-color);
+
+}
+
+/* .about-part4 */
+.about-part4, .about-part2{
+  background-color: #E2F0F6;
+}
+.partner-impact {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.our-partners {
+  width: 60%;
+}
+
+.our-impact {
+  width: 40%;
+}
+
+/* about-part5 */
+.about-part5 {
+  margin: 20px;
+}
+
+.ContactModule {
+  display: flex;
+  gap: 40px;
+}
+
+.join-us,
+.contact-information {
+  flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+
+  .intro,
+  .ContactModule,
+  .communities,
+  .partner-impact,
+  .team-members,
+  .mission-section,
+  .values {
+    flex-wrap: wrap;
+    border: 1px solid blue;
   }
 
-  .about-section{
-    padding: 20px;
-    margin: auto;
-    max-width: 1200px;
+  .about-intro-img,
+  .about-intro-story,
+  .our-partners,
+  .our-impact {
+    width: 100%;
   }
-  .about-intro, .our-story, .mission-vision-values, .meet-the-team, .our-community, .our-partners, .our-impact, .join-us, .contact-information {
-    margin-bottom: 40px;
-  }
-  
-  .team-member, .partner {
-    margin-bottom: 20px;
-  }
-  
-  .mission-vision-values ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .mission-vision-values ul li {
-    margin-bottom: 10px;
-  }
-  
-  .mission-vision-values blockquote {
-    margin: 20px 0;
-    padding: 10px 20px;
-    background-color: #f9f9f9;
-    border-left: 5px solid #ccc;
-  }
-  
-  .mission-vision-values .social-media a {
-    margin-right: 10px;
-    text-decoration: none;
-    color: #007bff;
-  }
-  
-  .mission-vision-values .social-media a:hover {
-    text-decoration: underline;
-  }
-  
+}
