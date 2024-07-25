@@ -25,6 +25,9 @@
   align-items: center;
   gap: 5px;
 }
+.logo-text{
+  margin: 0;
+}
 
 .logo {
   width: 100%;

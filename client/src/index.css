@@ -12,6 +12,9 @@
   border-radius: 20px;
   background-color: var(--accent-color);
 }
+* {
+  box-sizing: border-box;
+}
 :root {
   /* Colors */
   --primary-color: #3498db;

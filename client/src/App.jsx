@@ -15,6 +15,7 @@ import AboutUs from './Components/AboutUs/AboutUs';
 // css
 import './App.css';
 import Scholarships from './Components/Opportunities/Scholarships';
+import Dashboard from './Components/Dashboard/Dashboard';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
         element: <ArticleDetail />,
       },
     ],
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
   },
 ]);
 function App() {
