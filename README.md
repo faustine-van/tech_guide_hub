@@ -35,7 +35,8 @@ Make sure you have the following installed:
 
 ```bash
 git clone https://github.com/your-username/skillquanta.git
-cd skillquanta
+cd skillquanta/client # or
+cd skillquanta/server_side
 # Install Dependencies
 npm install
 # Start the Development Server
@@ -44,24 +45,34 @@ npm run dev
 Visit http://localhost:3000 to view the application.
 
 ## Technologies Used
-- Frontend: React, React Router, CSS Modules
+- Frontend: React, React Router
 - Backend: Node.js (Express), MongoDB (Mongoose)
 - Icons: react-icons (e.g., FaBriefcase, FaTools)
-- Deployment: TBD
+- Deployment: not yet deployed
 
 ## Project Structure
-skillquanta/
+SkillQuanta/
 │
-├── public/
-│   ├── images/             # Images used in the project
-│   ├── index.html          # Main HTML template
-├── src/
-│   ├── components/         # Reusable React components
-│   ├── pages/              # Individual page components (MainPage, Resources, Navbar)
-│   ├── App.js              # Main application component
-│   ├── index.js            # Entry point
-├── README.md               # Project documentation
-└── package.json            # Project configuration and dependencies
+├── client/                     # Frontend folder
+│   ├── public/                 # Public folder (static assets)
+│   │
+│   ├── src/                    # Source code for frontend
+│   │   ├── components/         # Reusable React components
+│   │   ├── App.jsx             # Main application component
+│   │   └── main.jsx            # Entry point for the React app
+│   │
+│   ├── README.md               # Frontend documentation
+│   └── package.json            # Frontend dependencies and configuration
+│
+├── server_side/                # Backend folder
+│   ├── controllers/            # Controller files (handling logic)
+│   ├── models/                 # Mongoose models (if using MongoDB)
+│   ├── routes/                 # API routes
+│   ├── server.js               # Entry point for backend
+│   └── package.json            # Backend dependencies and configuration
+│
+└── README.md                   # Overall project documentation
+
 
 ## Screenshots. **upcoming**
 
