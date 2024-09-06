@@ -70,9 +70,9 @@ If you want to contribute to the project, follow these steps:
 
 For more information, questions, or feedback, feel free to reach out:
 
-- **Email:** [faustine@example.com](mailto:faustinemuhayemariya44@gmail.com)
+- **Email:** [faustinemuhayemariya44@gmail.com](mailto:faustinemuhayemariya44@gmail.com)
 - **GitHub:** [Muhayemariya Faustine](https://github.com/faustine-van)
-- **LinkedIn:** [Your LinkedIn](https://linkedin.com/in/muhayemariya-faustine-404376267)
+- **LinkedIn:** [My LinkedIn](https://linkedin.com/in/muhayemariya-faustine-404376267)
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE]() file for details.
