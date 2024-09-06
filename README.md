@@ -51,27 +51,7 @@ Visit http://localhost:3000 to view the application.
 - Deployment: not yet deployed
 
 ## Project Structure
-SkillQuanta/
-│
-├── client/                     # Frontend folder
-│   ├── public/                 # Public folder (static assets)
-│   │
-│   ├── src/                    # Source code for frontend
-│   │   ├── components/         # Reusable React components
-│   │   ├── App.jsx             # Main application component
-│   │   └── main.jsx            # Entry point for the React app
-│   │
-│   ├── README.md               # Frontend documentation
-│   └── package.json            # Frontend dependencies and configuration
-│
-├── server_side/                # Backend folder
-│   ├── controllers/            # Controller files (handling logic)
-│   ├── models/                 # Mongoose models (if using MongoDB)
-│   ├── routes/                 # API routes
-│   ├── server.js               # Entry point for backend
-│   └── package.json            # Backend dependencies and configuration
-│
-└── README.md                   # Overall project documentation
+
 
 
 
