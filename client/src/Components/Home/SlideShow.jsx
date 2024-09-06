@@ -11,7 +11,7 @@ const MyCarousel = () => {
             image: '/Default_developer_or_tech_entusiast_3.jpg',
             box: {
                 heading: 'Scholarships',
-                buttonLabel: 'Explore Scholarships',
+                buttonLabel: 'Explore More',
                 content: 'Apply for our annual scholarship program to get financial support for your studies.'
             },
         },
@@ -20,7 +20,7 @@ const MyCarousel = () => {
             image: '/Default_tech_world_0.jpg',
             box: {
                 heading: 'Online Courses',
-                buttonLabel: 'Explore Online Courses',
+                buttonLabel: 'Explore More',
                 content: 'Enhance your skills with our comprehensive online courses available in various domains.'
             },
         },
@@ -29,7 +29,7 @@ const MyCarousel = () => {
             image: '/Default_look_good_3.jpg',
             box: {
                 heading: 'Events',
-                buttonLabel: 'Explore Events',
+                buttonLabel: 'Explore More',
                 content: 'Stay updated with the latest industry events and workshops.'
             },
         },
@@ -38,7 +38,7 @@ const MyCarousel = () => {
             image: '/Default_websites_for_event_designs_zoomwebnar_for_inspiration_3.jpg',
             box: {
                 heading: 'Mentorship Program',
-                buttonLabel: 'Explore Mentorship Programs',
+                buttonLabel: 'Explore More',
                 content: 'Get guidance from experienced professionals through our mentorship program.'
             },
         },
@@ -47,7 +47,7 @@ const MyCarousel = () => {
             image: '/Default_website_for_A_professional_background_image_showcasing_3.jpg',
             box: {
                 heading: 'Internships',
-                buttonLabel: 'Explore Internships',
+                buttonLabel: 'Explore More',
                 content: 'Apply for internships to gain practical experience and kickstart your career.'
             },
         },
@@ -114,13 +114,11 @@ const MyCarousel = () => {
                         <p className="hero-paragraph">
                                 {item.box.heading}
                             </p>
-                            <h1 className="hero-heading">{ item.box.content}</h1>
+                            <h2 className="hero-heading">{ item.box.content}</h2>
                             
-                            <Link to="/" className="hero-button">
+                            <Link to="/" className="btn-get-started">
                                 {item.box.buttonLabel}
-                                <svg className="hero-svg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg>
+                              
                             </Link>
                         </div>
                     </div>

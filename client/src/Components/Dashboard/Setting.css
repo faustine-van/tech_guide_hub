@@ -1,0 +1,23 @@
+.setting-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .setting-item {
+    margin-bottom: 20px;
+    color: var(--text-color);
+
+  }
+  
+  .setting-item h3 {
+    font-size: var(--font-size-lg);
+  }
+  
+  .setting-item p {
+    font-size: var(--font-size-md);
+  }
+  

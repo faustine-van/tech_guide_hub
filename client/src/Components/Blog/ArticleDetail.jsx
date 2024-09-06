@@ -1,6 +1,7 @@
 import React from "react";
 import PopularArticle from "./PopularArticles";
 import { Newsletter } from "../ReusableComponents/NewsLetters";
+import ShareButtonsBlog from "./ShareButtonsBlog";
 
 import "./ArticleDetail.css";
 
@@ -9,14 +10,18 @@ function ArticleDetail() {
     <div className="article-details">
       <main>
         <article>
-          <h2>
+          <h1>
             The 2024 State of Marketing & Trends Report: Data from 1400+ Global
             Marketers
-          </h2>
+          </h1>
+          
           <div className="meta-info">
             <span className="author">By John Doe</span> |{" "}
             <span className="date">June 29, 2024</span> |{" "}
             <span className="tag">Developer Insights</span>
+            <span className="">2 min read</span>
+            <ShareButtonsBlog />
+
           </div>
           <div className="hero-image">
             <img src="/Default_tech_world_0.jpg" alt="Hero Image" />

@@ -13,16 +13,23 @@
   article {
     margin-right: 20px;
   }
-  
   h1 {
     font-size: 2em;
     margin-bottom: 10px;
   }
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
   
   .meta-info {
     font-size: var(--font-size-sm);
     color: #666;
     margin-bottom: 20px;
+    border-bottom: 1px solid var(--button-color);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
   }
   
   .meta-info span {
@@ -52,11 +59,7 @@
     line-height: 1.6;
   }
   
-  h2 {
-    font-size: 1.5em;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
+ 
   
   blockquote {
     margin: 20px 0;

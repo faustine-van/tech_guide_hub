@@ -1,0 +1,27 @@
+/* ShareButtons.css or similar */
+.share-buttons-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  .share-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--button-color);
+    padding: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    transition: color 0.3s;
+    border-radius: 20px;
+
+  }
+  
+  .share-button:hover {
+    color: var(--background-grey-color);
+  }
+
+  

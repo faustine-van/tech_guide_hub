@@ -1,33 +1,31 @@
 import React from 'react';
-import { FaEnvelope, FaFacebookSquare, FaLinkedin, FaWhatsappSquare } from 'react-icons/fa';
-import { FaSquareXTwitter } from 'react-icons/fa6';
+import {FaFacebookF, FaLinkedinIn, FaTwitter, FaWhatsapp, FaInstagram } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+
 
 
 function SocialButtons() {
-    return (
-        <div className="social-btns">
-            <div className="social">
-              <a className="social-btn facebook" href="#">
-                <FaFacebookSquare />
-              </a>
-            </div>
-            <div className="social">
-              <a className="social-btn twitter" href="#">
-                <FaSquareXTwitter />
-              </a>
-            </div>
-            <div className="social">
-              <a className="social-btn whatsapp" href="#">
-                <FaWhatsappSquare />
-              </a>
-            </div>
-            <div className="social">
-              <a className="social-btn linkedin" href="#">
-                <FaLinkedin />
-              </a>
-            </div>
-          </div>
-    );
+  return (
+    <div className="social-btns">
+
+
+      <Link className="social-btn">
+        <FaFacebookF size={16} />
+      </Link>
+      <Link className="social-btn">
+        <FaTwitter size={16} />
+      </Link>
+      <Link className="social-btn">
+        <FaLinkedinIn size={16} />
+      </Link>
+      <Link className="social-btn">
+        <FaInstagram size={16} />
+      </Link>
+      <Link className="social-btn">
+        <FaWhatsapp size={16} />
+      </Link>
+    </div>
+  );
 }
 
 export default SocialButtons;

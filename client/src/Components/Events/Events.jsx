@@ -34,7 +34,7 @@ function Events() {
                   <p>Speakers: John Doe, Jane Smith</p>
                 </div>
                 <p>Join us for a comprehensive workshop on enhancing your WordPress website's security, covering best practices, tools, and techniques.</p>
-                <Link to='/event' className="btn">
+                <Link to='/events/1' className="btn">
                   More details
                 </Link>
               </div>

@@ -35,6 +35,7 @@
 .scholarship-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 .scholarship-details {
     margin: 10px 0;
@@ -58,7 +59,7 @@
   }
 
 .scholarship-card h3 {
-    color: #215c83;
+    color: var(--primary-color);
     margin: 0;
     margin-bottom: 10px;
 }
@@ -73,14 +74,16 @@
     margin-top: 10px;
     padding: 10px 15px;
     color: #ffffff;
-    background-color: #215c83;
+    background-color: var(--primary-color);
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
 .scholarship-link:hover {
-    background-color: #17405d;
+    background-color: var(--button-color);
+    color: var(--background-grey-color);
+
 }
 
 /* Responsive adjustments */

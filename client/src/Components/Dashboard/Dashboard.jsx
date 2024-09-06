@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import { FaHome, FaUser, FaCog, FaBlog, FaClipboardList, FaComments, FaChartBar, FaBell, FaQuestionCircle, FaEnvelope, FaFileAlt, FaChevronLeft, FaChevronRight, FaSignOutAlt, FaBars, FaTimes } from 'react-icons/fa';
+import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
+import { FaHome, FaUser, FaCog, FaChartBar, FaBell, FaQuestionCircle, FaEnvelope, FaFileAlt, FaChevronLeft, FaChevronRight, FaSignOutAlt, FaBars, FaTimes } from 'react-icons/fa';
 import './Dashboard.css';
+import SocialButtons from '../ReusableComponents/SocialButtons';
+
 
 function Dashboard(props) {
     const [isCollapsed, setIsCollapsed] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const location = useLocation(); // get current path
 
     const toggleSidebar = () => {
         setIsCollapsed(!isCollapsed);
@@ -15,6 +18,17 @@ function Dashboard(props) {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    // Function to determine breadcrumb items based on the current path
+    const getBreadcrumbs = () => {
+        const pathnames = location.pathname.split('/').filter(x => x);
+        const breadcrumbItems = [
+            ...pathnames.map((pathname, index) => ({
+                name: pathname.charAt(0).toUpperCase() + pathname.slice(1),
+                path: `/${pathnames.slice(0, index + 1).join('/')}`
+            }))
+        ];
+        return breadcrumbItems;
+    };
     return (
         <div className={`dashboard ${isCollapsed ? 'sidebar-collapsed' : ''}`}>
             <div className={`dash-sidebar ${isCollapsed ? 'collapsed' : ''}`}>
@@ -25,57 +39,64 @@ function Dashboard(props) {
                     <NavLink to='/' className='dash-sidebar-link'>
                         <FaHome /> {!isCollapsed && 'Home'}
                     </NavLink>
-                    <NavLink to='/profile' className='dash-sidebar-link'>
-                        <FaUser /> {!isCollapsed && 'Profile'}
+                    <NavLink to='/dashboard' className='dash-sidebar-link'>
+                        <FaChartBar /> {!isCollapsed && 'Overview'}
                     </NavLink>
-                    <NavLink to='/settings' className='dash-sidebar-link'>
-                        <FaCog /> {!isCollapsed && 'Settings'}
-                    </NavLink>
-                    <NavLink to='/notifications' className='dash-sidebar-link'>
+                    
+                    <NavLink to='/dashboard/notifications' className='dash-sidebar-link'>
                         <FaBell /> {!isCollapsed && 'Notifications'}
                     </NavLink>
-                    <NavLink to='/messages' className='dash-sidebar-link'>
+                    <NavLink to='/dashboard/create-user' className='dash-sidebar-link'>
                         <FaEnvelope /> {!isCollapsed && 'Messages'}
                     </NavLink>
-                    <NavLink to='/reports' className='dash-sidebar-link'>
+                    <NavLink to='dashboard/reports' className='dash-sidebar-link'>
                         <FaFileAlt /> {!isCollapsed && 'Reports'}
                     </NavLink>
-                    <NavLink to='/logout' className='dash-sidebar-link'>
+                    <NavLink to='/dashboard/my-profile' className='dash-sidebar-link'>
+                        <FaUser /> {!isCollapsed && 'My Profile'}
+                    </NavLink>
+                    <NavLink to='dashboard/settings' className='dash-sidebar-link'>
+                            <FaCog /> {!isCollapsed &&  'Settings'}
+                    </NavLink>
+                    <NavLink to='dashboard/logout' className='dash-sidebar-link'>
                         <FaSignOutAlt /> {!isCollapsed && 'Logout'}
                     </NavLink>
                 </div>
             </div>
             <div className="dash-content">
                 <div className="dash-navbar">
-                    <button className="menu-toggle" onClick={toggleMenu}>
-                        {isMenuOpen ? <FaTimes /> : <FaBars />}
-                    </button>
+
                     <div className="dash-logo">
+                        <button className="menu-toggle" onClick={toggleMenu}>
+                            {isMenuOpen ? <FaTimes /> : <FaBars />}
+                        </button>
                         <h2 className="dash-logo-text">Dashboard</h2>
                     </div>
                     <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
                         <NavLink to='/' className='dash-sidebar-link'>
                             <FaHome /> Home
                         </NavLink>
-                        <NavLink to='/profile' className='dash-sidebar-link'>
-                            <FaUser /> Profile
-                        </NavLink>
-
-                        <NavLink to='/notifications' className='dash-sidebar-link'>
+                        <NavLink to='/dashboard/overview' className='dash-sidebar-link'>
+                        <FaChartBar /> Overview
+                    </NavLink>
+                        <NavLink to='dashboard/notifications' className='dash-sidebar-link'>
                             <FaBell /> Notifications
                         </NavLink>
-                        <NavLink to='/messages' className='dash-sidebar-link'>
-                            <FaEnvelope /> Messages
+                        <NavLink to='dashboard/messages' className='dash-sidebar-link'>
+                            <FaEnvelope /> Resource Types
                         </NavLink>
-                        <NavLink to='/reports' className='dash-sidebar-link'>
+                        <NavLink to='dashboard/reports' className='dash-sidebar-link'>
                             <FaFileAlt /> Reports
                         </NavLink>
 
-                        <NavLink to='/help' className='dash-sidebar-link'>
+                        <NavLink to='dashboard/help' className='dash-sidebar-link'>
                             <FaQuestionCircle /> Help
                         </NavLink>
-                        <NavLink to='/settings' className='dash-sidebar-link'>
+                        <NavLink to='dashboard/settings' className='dash-sidebar-link'>
                             <FaCog /> Settings
+                        </NavLink>
+                        <NavLink to='dashboard/profile/me' className='dash-sidebar-link'>
+                            <FaUser />My Profile
                         </NavLink>
                         <NavLink to='/logout' className='dash-sidebar-link'>
                             <FaSignOutAlt /> Logout
@@ -84,9 +105,12 @@ function Dashboard(props) {
                     <div className="dash-profile-container">
                         <div className="dash-profile-links">
                             <NavLink to='/help' className='dash-link'>
+                                <FaBell />
+                            </NavLink>
+                            <NavLink to='/help' className='dash-link'>
                                 <FaQuestionCircle /> Help
                             </NavLink>
-                            <NavLink to='/settings' className='dash-link'>
+                            <NavLink to='/dashboard/settings' className='dash-link'>
                                 <FaCog /> Settings
                             </NavLink>
                         </div>
@@ -96,73 +120,50 @@ function Dashboard(props) {
                     </div>
                 </div>
                 <div className="dash-container">
+                    {/* Dynamic Breadcrumbs */}
                     <nav className="breadcrumbs">
-                        <NavLink to="/dashboard" className="breadcrumb-link">Dashboard</NavLink>
-                        <span className="breadcrumb-separator">/</span>
-                        <span className="breadcrumb-current">Overview</span>
+                        {getBreadcrumbs().map((breadcrumb, index) => (
+                            <React.Fragment key={breadcrumb.path}>
+                                <NavLink to={breadcrumb.path} className="breadcrumb-link">
+                                    {breadcrumb.name}
+                                </NavLink>
+                                {index < getBreadcrumbs().length - 1 && (
+                                    <span className="breadcrumb-separator">/</span>
+                                )}
+                            </React.Fragment>
+                        ))}
                     </nav>
-                    <div className="card-stats">
-                        <div className="card-header">Quick Stats</div>
-                        <div className="card-content">
-                            <div className="stat-boxes">
-                                <div className="stat-box">
-                                    <FaBlog />
-                                    <p>Blogs</p>
-                                    <p>10</p>
-                                </div>
-                                <div className="stat-box">
-                                    <FaClipboardList />
-                                    <p>Opportunities</p>
-                                    <p>5</p>
-                                </div>
-                                <div className="stat-box">
-                                    <FaComments />
-                                    <p>Comments</p>
-                                    <p>20</p>
-                                </div>
-                            </div>
+
+
+                    <Outlet name="dashboard" />
+                </div>
+
+                <div className="footer">
+                <div className="footer-copyright">
+                    <p>&copy; 2024 SkillQuanta Hub. All rights reserved.</p>
+                    <div className="footer-securty-menu">
+                        <div className="footer-menu-column">
+                            <Link className="footer-link" href="#1">
+                                Terms of use
+                            </Link>
+                            <Link className="footer-link" href="#2">
+                                Privacy policy
+                            </Link>
+                            <Link className="footer-link" href="#2">
+                                FAQ
+                            </Link>
                         </div>
                     </div>
-                    <div className="dash-cards">
-                        <div className="dash-card">
-                            <div className="card-header">
-                                <FaClipboardList /> Content Management
-                            </div>
-                            <div className="card-content">
-                                <NavLink to='/manage-blogs' className='dash-content-link'>Manage Blogs</NavLink>
-                                <NavLink to='/manage-opportunities' className='dash-content-link'>Manage Opportunities</NavLink>
-                            </div>
-                        </div>
-                        <div className="dash-card">
-                            <div className="card-header">
-                                <FaUser /> User Management
-                            </div>
-                            <div className="card-content">
-                                <NavLink to='/manage-users' className='dash-content-link'>Manage Users</NavLink>
-                            </div>
-                        </div>
+                    <div className="footer-social-media" style={{display: 'flex', justifyContent: 'center'}}>
+                        {/* <!-- Social media icons --> */}
+                        <SocialButtons />
+
                     </div>
-                    <div className="dash-card">
-                        <div className="card-header">
-                            <FaComments /> Recent Activity
-                        </div>
-                        <div className="card-content">
-                            <ul>
-                                <li>User A commented on Blog Post 1</li>
-                                <li>New Opportunity added: Internship at XYZ</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="dash-card">
-                        <div className="card-header">
-                            <FaChartBar /> Analytics
-                        </div>
-                        <div className="card-content">
-                            <p>Coming soon...</p>
-                        </div>
-                    </div>
+
                 </div>
             </div>
+            </div>
+            
         </div>
     );
 }

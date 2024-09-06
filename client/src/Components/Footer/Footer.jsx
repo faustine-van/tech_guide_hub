@@ -45,7 +45,7 @@ function Footer() {
         
         </div>
         <div className="footer-links">
-          <h3>Opportunities</h3>
+          <h3>Resources</h3>
 
           <Link className="footer-link" href="#">
             Scholarships

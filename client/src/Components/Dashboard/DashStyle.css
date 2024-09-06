@@ -1,0 +1,178 @@
+.dash-table-container {  
+    max-width: 1200px;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-y: auto;
+    background-color: var(--background-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.styled-table {
+    background-color: white;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: var(--font-size-md);
+    flex: 1;
+
+}
+
+.styled-table thead tr {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: var(--background-grey-color);
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.styled-table tbody tr:hover {
+    background-color: var(--background-color-dark);
+}
+.styled-table tbody .table-img{
+    width: 50px;
+    height: 50px;
+}
+.styled-table tbody .table-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.action-btn {
+    font-size: var(--font-size-sm);
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: var(--button-color);
+    color: white;
+    text-decoration: none;
+}
+
+.action-btn:hover {
+    background-color: var(--primary-color-dark);
+    color: white;
+}
+.action-btn.create {
+	padding: 0.8em 1.9em;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-sm);
+}
+
+.action-btn.delete {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.action-btn.delete:hover {
+    background-color: var(--accent-color-dark);
+    color: white;
+}
+
+/* Report Style */
+.report-container{
+    padding: 10px;
+}
+.report-boxes {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.report-box {
+    text-align: start;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+}
+/* report  icons*/
+.report-box svg {
+    font-size: 24px;
+    color: #3498db;
+    margin-bottom: 8px;
+}
+.report-box h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+.report-box p {
+    font-size: var(--font-size-sm);
+}
+.dash-table-container .pages{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dash-table-container .pages .page {
+    text-decoration: none;
+    font-size: var(--font-size-md);
+    color: var(--button-color);
+    border: none;
+    padding: 10px;
+    font-weight: var(--font-weight-bold);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+.dash-table-container .pages .page:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+    animation: shake_up_bottom 2s infinite;
+}
+/* .icon */
+.page svg {
+    font-size: var(--font-size-md); /* Adjust icon size to match text size */
+    margin-right: 8px; /* Space between icon and text */
+}
+
+  
+.dash-table-container .pages .pagination-start {
+    display: flex;
+    gap: 15px; /* Adjust this value to set the gap between buttons */
+}
+.dash-table-container .pages .next-page {
+    margin-left: auto;
+}
+
+/* add responsiveness */
+@media (max-width: 768px) {
+    .report-boxes{
+        flex-direction: column;
+    }
+    .report-box{
+        text-align: center;
+    }
+}

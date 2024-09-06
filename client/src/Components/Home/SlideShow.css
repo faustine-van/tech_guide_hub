@@ -30,35 +30,35 @@
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    background: rgba(0, 0, 0, 0.5); /* Optional: Add a dark overlay for better text visibility */
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
 }
 
 .hero-heading {
-    margin-bottom: 1rem; /* mb-4 */
-    letter-spacing: -0.05em; /* tracking-tight */
+    margin-bottom: 1rem;
+    letter-spacing: -0.05em;
 }
 
 .hero-paragraph {
     font-size: var(--font-size-sm);
     color: var(--secondary-color);
-    margin-bottom: 1rem; /* mb-6 */
-    word-wrap: break-word; /* Ensure text wraps correctly */
-    word-break: break-all; /* Ensure long words break correctly */
-    white-space: normal; /* Ensure text wraps */
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
 }
 
 .hero-button {
     display: inline-flex;
-    align-items: center; /* items-center */
-    justify-content: center; /* justify-center */
-    padding: 7px 30px; /* px-5 py-3 */
+    align-items: center;
+    justify-content: center;
+    padding: 7px 30px;
     font-size: var(--font-size-md);
-    text-align: center; /* text-center */
-    color: #fff; /* text-white */
+    text-align: center;
+    color: #fff;
     background-color: var(--primary-color);
-    border-radius: 0.5rem; /* rounded-lg */
+    border-radius: 0.5rem;
     transition: background-color 0.3s;
     text-decoration: none;
     font-weight: var(--font-weight-bold);
@@ -70,33 +70,33 @@
 }
 
 .hero-button .hero-svg {
-    width: 0.875rem; /* w-3.5 */
-    height: 0.875rem; /* h-3.5 */
-    margin-left: 0.5rem; /* ms-2 */
+    width: 0.875rem;
+    height: 0.875rem;
+    margin-left: 0.5rem;
 }
 
 .hero-button .hero-svg[dir="rtl"] {
-    transform: rotate(180deg); /* rtl:rotate-180 */
+    transform: rotate(180deg);
 }
 
 .custom-prev-arrow,
 .custom-next-arrow {
-    background-color: white; /* Background color of the arrow */
-    color: black; /* Text color of the arrow */
-    border: none; /* Remove default border */
-    border-radius: 50%; /* Rounded shape */
-    font-size: 1.5rem; /* Font size */
-    width: 40px; /* Width of the arrow button */
-    height: 40px; /* Height of the arrow button */
-    display: flex; /* Center the arrow icon */
-    align-items: center; /* Center the arrow icon */
-    justify-content: center; /* Center the arrow icon */
-    cursor: pointer; /* Cursor style */
-    position: absolute; /* Position the arrows */
-    top: 50%; /* Vertical center */
-    transform: translateY(-50%); /* Vertical center */
-    z-index: 2; /* Ensure arrows are above carousel items */
-    transition: background-color 0.3s; /* Smooth transition for background color */
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    transition: background-color 0.3s;
 }
 
 .custom-prev-arrow {
@@ -114,9 +114,9 @@
 
 @media (max-width: 1024px) {
     .hero-paragraph {
-        font-size: 1.25rem; /* lg:text-xl */ 
-        padding-left: 4rem; /* sm:px-16 */
-        padding-right: 4rem; /* sm:px-16 */
+        font-size: 1.25rem; 
+        padding-left: 4rem; 
+        padding-right: 4rem; 
     }
 }
 
@@ -125,13 +125,19 @@
         width: 80%;
     }
     .hero-heading {
-        margin-bottom: 1rem; /* mb-4 */
+        margin-bottom: 1rem;
         font-size: var(--font-size-lg);
-        letter-spacing: -0.05em; /* tracking-tight */
+        letter-spacing: -0.05em;
     }
     .hero-paragraph {
-        font-size: var(--font-size-sm); /* text-lg */
-        padding-left: 2.5rem; /* sm:px-10 */
-        padding-right: 2.5rem; /* sm:px-10 */
+        font-size: var(--font-size-sm);
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
     }
 }
+@media (max-width: 967px) {
+    .overlay {
+        width: 80%;
+    }
+}
+

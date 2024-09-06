@@ -1,0 +1,181 @@
+.resources section {
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.resources  h2 {
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Resource Library Styles */
+.resources .search-bar { 
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.resources .category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.resources .category-buttons button {
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.resources .category-buttons button:hover {
+    background-color: #007bff;
+    color: white;
+}
+/* listen event /* Webinars and Workshops Styles */
+
+.listen-section {
+    margin: 20px;
+  }
+
+  
+  .listen-banner {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin: 10px 0;
+  }
+  
+  .listen-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .listen-content p {
+    margin: 0;
+    margin-right: 10px;
+  }
+  
+
+  
+  
+
+
+/* Career Resources Styles */
+.career-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.resources .career-item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.resources .career-item p{
+    font-size: var(--font-size-md);
+
+}
+
+.resources .career-item a {
+    padding: 10px  20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: var(--font-size-sm);
+    text-decoration: none;
+    background-color: #17a2b8;
+    color: white;
+}
+.resources .career-item a:hover {
+    background-color: #138496;
+
+}
+
+/* Mentorship Program Styles */
+.mentorship-content {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 5px;
+
+}
+
+.resources .mentorship-buttons {
+    margin-top: 20px;
+}
+
+.resources .find-mentor-btn, .become-mentor-btn {
+    padding: 10px  20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: var(--font-size-sm);
+    text-decoration: none;
+}
+
+.resources .find-mentor-btn {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.resources .become-mentor-btn {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.resources .find-mentor-btn:hover {
+    background-color: #138496;
+}
+
+.resources .become-mentor-btn:hover {
+    background-color: #e0a800;
+}
+.community-forum-section{
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.community-forum-content {
+    text-align: center;
+}
+.community-forum-section .btn-forum{
+    text-decoration: none;
+    background-color: #17a2b8;
+    color: white;
+    padding: 10px  20px;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--font-size-sm);
+    
+}
+.community-forum-section .btn-forum:hover{
+    background-color: #138496;
+
+}
+
+@media (max-width: 768px) {
+    .category-buttons, .resource-grid, .event-list, .career-grid {
+      grid-template-columns: 1fr;
+    }
+}

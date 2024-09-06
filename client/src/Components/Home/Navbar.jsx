@@ -45,7 +45,7 @@ function Navbar() {
             <Link to='/'>
             <img
               src="/Default_The_SkillQuanta_logo_exudes_quality_and_precision_with_0-removebg-preview.png"
-              alt="TechGuide Hub Logo"
+              alt="SkillQuanta Logo"
               height="50"
             />
             </Link>
@@ -60,12 +60,13 @@ function Navbar() {
             </NavLink>
             <Link to='/about-us' className="link about">About Us</Link>
             <div className="dropdown link">
-              <a
-                className="dropdn"
+              <Link
+                to='/Resources'
+                className="dropdn" style={{textDecoration: 'none', color: '#2c3e50'}}
                 onClick={() => handleDropdown("opportunities")}
               >
-                Opportunities <FaCaretDown />
-              </a>
+                Resources <FaCaretDown />
+              </Link>
               {activeDropdown === "opportunities" && (
                 <div className="dropdown-content">
                   <div className="mega-menu">
@@ -143,6 +144,7 @@ function Navbar() {
                 </div>
               )}
             </div>
+            <Link to='/contact-us' className="link contact">Contact Us</Link>
           </div>
         </div>
         <div className="navbar-right">
@@ -154,9 +156,12 @@ function Navbar() {
               <FaSearch className="icon" />
             </div>
           )}
+           
            <button className="navbar-subscribe" type="submit" >
-            Subscribe               
+            Subscribe           
           </button>
+         
+          
           <div
             className="menu-toggle"
             onClick={() => setIsMenuOpen(!isMenuOpen)}

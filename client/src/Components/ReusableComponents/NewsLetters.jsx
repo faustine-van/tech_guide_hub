@@ -6,10 +6,13 @@ import './GlobalStyles.css';
 
 export function Newsletter() {
   return (
+    // css in app.css
     <div className="newsletter">
+              <label htmlFor="">Enter you email*</label>
+
       <div className="input">
         <input type="email" placeholder="Enter your email" />
-        <button className="navbar-subscribe" type="submit">
+        <button className="navbar-subscribe" type="submit"> {/*style for navbar-subscribe class in navbar.css file*/}
           Subscribe
         </button>
       </div>

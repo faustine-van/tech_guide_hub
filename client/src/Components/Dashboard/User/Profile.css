@@ -1,0 +1,129 @@
+.profile-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.profile-header {
+    /* text-align: center; */
+    margin-bottom: 15px;
+}
+
+.profile-icon {
+    font-size: 100px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-color);
+}
+
+.profile-bio {
+    font-size: var(--font-size-md);
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.edit-profile-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+    background-color: var(--accent-color);
+}
+
+.profile-details h2 {
+    font-size: var(--font-size-md);
+    margin: 0;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.profile-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-details li {
+    font-size: var(--font-size-sm);
+    margin: 10px 0;
+    color: var(--text-color);
+}
+
+.profile-details a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+}
+
+.profile-details a:hover {
+    color: var(--accent-color);
+}
+
+.profile-interests li {
+    background-color: var(--background-color);
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: var(--font-size-sm);
+    color: var(--text-color);
+    transition: background-color 0.3s ease;
+}
+
+.profile-interests li:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-size: var(--font-size-sm);
+
+}
+
+.profile-social {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 20px;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: var(--accent-color);
+}
