@@ -52,6 +52,7 @@ Visit http://localhost:3000 to view the application.
 
 ## Project Structure
 
+![project structure](https://github.com/user-attachments/assets/a9a04062-df06-4455-924e-ed196fb8d7a1)
 
 
 
